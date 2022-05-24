@@ -6,4 +6,4 @@ It was created by Dimitar Nikolov. :)
 - Programming fundamentals with C# 💓
 
 **Softuni Courses with Java**
-- - Programming basics with Java 💓
+- Programming basics with Java 💓
