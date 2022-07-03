@@ -10,3 +10,7 @@ It was created by Dimitar Nikolov. 😄
 
 **Softuni Courses with Java**
 - Programming basics with Java 💓
+
+
+**Softuni Courses with Python**
+- Programming basics with Python 💓
