@@ -1,4 +1,4 @@
-# Softuni Courses 😃😃😃😃😃🥰😏
+# Softuni Courses 😃
 This is a repository for my SoftUni Courses.
 
 This repository contains info about the Softuni courses "Programming fundamentals with C#" and "Programming basics with Java".
