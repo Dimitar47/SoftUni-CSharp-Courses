@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>_5.MultiplySign</RootNamespace>
+    <RootNamespace>_05._Multiplication_Sign</RootNamespace>
   </PropertyGroup>
 
 </Project>

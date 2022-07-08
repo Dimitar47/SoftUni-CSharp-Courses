@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _3.LongerLine
+namespace _03._Longer_Line
 {
     class Program
     {

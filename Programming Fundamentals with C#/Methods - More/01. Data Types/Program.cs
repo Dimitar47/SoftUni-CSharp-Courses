@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MethodsMoreEx
+namespace _01._Data_Types
 {
     class Program
     {
