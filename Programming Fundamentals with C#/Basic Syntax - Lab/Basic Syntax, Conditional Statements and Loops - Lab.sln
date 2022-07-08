@@ -25,9 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12. Even Number", "12. Even
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13. Holidays Between Two Dates", "13. Holidays Between Two Dates\13. Holidays Between Two Dates.csproj", "{82E61F27-1BB2-4463-9264-8CCEBC0BC835}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.Student info", "C:\Users\admin\source\repos\Basic Syntax, Conditional Statements and Loops - Lab\01. Student Info\01.Student info.csproj", "{661EBB0B-7B7A-416C-820E-FD6EE186A9F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Student Information", "01.Student Information\01.Student Information.csproj", "{4BAC2673-9D79-49AC-A515-60659F7977F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.Passed", "C:\Users\admin\source\repos\Basic Syntax, Conditional Statements and Loops - Lab\02. Passed\02.Passed.csproj", "{C70FA819-4AD5-4A4D-B823-82284EE0BC06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Pass", "02.Pass\02.Pass.csproj", "{DCCF3C93-17AA-4CE5-B525-95B4BFAA5E4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.Demo", "00.Demo\00.Demo.csproj", "{15F79F03-D3DF-462F-932B-2D4229557C7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,14 +81,18 @@ Global
 		{82E61F27-1BB2-4463-9264-8CCEBC0BC835}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82E61F27-1BB2-4463-9264-8CCEBC0BC835}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82E61F27-1BB2-4463-9264-8CCEBC0BC835}.Release|Any CPU.Build.0 = Release|Any CPU
-		{661EBB0B-7B7A-416C-820E-FD6EE186A9F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{661EBB0B-7B7A-416C-820E-FD6EE186A9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{661EBB0B-7B7A-416C-820E-FD6EE186A9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{661EBB0B-7B7A-416C-820E-FD6EE186A9F2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C70FA819-4AD5-4A4D-B823-82284EE0BC06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C70FA819-4AD5-4A4D-B823-82284EE0BC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C70FA819-4AD5-4A4D-B823-82284EE0BC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C70FA819-4AD5-4A4D-B823-82284EE0BC06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BAC2673-9D79-49AC-A515-60659F7977F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BAC2673-9D79-49AC-A515-60659F7977F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BAC2673-9D79-49AC-A515-60659F7977F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BAC2673-9D79-49AC-A515-60659F7977F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCF3C93-17AA-4CE5-B525-95B4BFAA5E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCF3C93-17AA-4CE5-B525-95B4BFAA5E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCF3C93-17AA-4CE5-B525-95B4BFAA5E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCF3C93-17AA-4CE5-B525-95B4BFAA5E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F79F03-D3DF-462F-932B-2D4229557C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F79F03-D3DF-462F-932B-2D4229557C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F79F03-D3DF-462F-932B-2D4229557C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F79F03-D3DF-462F-932B-2D4229557C7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
