@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Basic_Syntax__Conditional_Statements_and_Loops_More_Exercise
+namespace _01._Sort_Numbers
 {
     class Program
     {
