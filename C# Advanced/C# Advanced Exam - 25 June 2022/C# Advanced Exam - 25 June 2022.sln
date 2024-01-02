@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Tiles Master", "01. Tiles Master\01. Tiles Master.csproj", "{5E1EE429-36B8-4CB5-83F8-C8FCF3018B8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Wall Destroyer", "02. Wall Destroyer\02. Wall Destroyer.csproj", "{F5BEE924-9CF4-4DE2-8E08-0C9C8315AFBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E1EE429-36B8-4CB5-83F8-C8FCF3018B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1EE429-36B8-4CB5-83F8-C8FCF3018B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1EE429-36B8-4CB5-83F8-C8FCF3018B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1EE429-36B8-4CB5-83F8-C8FCF3018B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5BEE924-9CF4-4DE2-8E08-0C9C8315AFBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5BEE924-9CF4-4DE2-8E08-0C9C8315AFBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5BEE924-9CF4-4DE2-8E08-0C9C8315AFBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5BEE924-9CF4-4DE2-8E08-0C9C8315AFBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {345594EA-B384-45B6-B6EB-7D65FA246938}
+	EndGlobalSection
+EndGlobal

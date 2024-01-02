@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Blacksmith", "01. Blacksmith\01. Blacksmith.csproj", "{AC78F9F4-A5C3-4E72-A3DC-86A9E8A0A266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Armory", "02. Armory\02. Armory.csproj", "{01E13797-EFD4-40FF-83AC-7969F8E18281}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC78F9F4-A5C3-4E72-A3DC-86A9E8A0A266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC78F9F4-A5C3-4E72-A3DC-86A9E8A0A266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC78F9F4-A5C3-4E72-A3DC-86A9E8A0A266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC78F9F4-A5C3-4E72-A3DC-86A9E8A0A266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01E13797-EFD4-40FF-83AC-7969F8E18281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01E13797-EFD4-40FF-83AC-7969F8E18281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01E13797-EFD4-40FF-83AC-7969F8E18281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01E13797-EFD4-40FF-83AC-7969F8E18281}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66FA7013-B9E5-4260-8780-46E2C2E66F3C}
+	EndGlobalSection
+EndGlobal
