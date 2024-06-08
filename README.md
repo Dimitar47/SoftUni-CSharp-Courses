@@ -3,7 +3,7 @@
 
 This is a repository for my SoftUni Courses.
 
-This repository contains info about the Softuni courses "Programming fundamentals with C#", "C# Advanced", "MS SQL", "C# OOP","Programming basics with Java" and "Programming basics with Python".
+This repository contains info about the Softuni courses "Programming fundamentals with C#", "C# Advanced", "C# OOP", "MS SQL", "Programming basics with Java" and "Programming basics with Python".
 
 It was created by Dimitar Nikolov. 
 
