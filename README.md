@@ -3,7 +3,7 @@
 
 This is a repository for my SoftUni Courses.
 
-This repository contains info about the Softuni courses "Programming fundamentals with C#", "C# Advanced", "C# OOP", "MS SQL".
+This repository contains info about the Softuni courses "Programming fundamentals with C#", "C# Advanced", "C# OOP", "MS SQL", "Entity Framework Core".
 
 It was created by Dimitar Nikolov. 
 
@@ -12,6 +12,6 @@ It was created by Dimitar Nikolov.
 - C# Advanced 💓
 - C# OOP 💓
 - MS SQL 💓
-
+- Entity Framework Core 💓
 
 
