@@ -1,0 +1,112 @@
+[
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Tacoma",
+      "TraveledDistance": 431663130
+    },
+    "customerName": "Ann Mcenaney",
+    "discount": "30.00",
+    "price": "0.00",
+    "priceWithDiscount": "0.00"
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "275",
+      "TraveledDistance": 448008546
+    },
+    "customerName": "Faustina Burgher",
+    "discount": "50.00",
+    "price": "0.00",
+    "priceWithDiscount": "0.00"
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Rapid Spaceback",
+      "TraveledDistance": 371247268
+    },
+    "customerName": "Louann Holzworth",
+    "discount": "0.00",
+    "price": "0.00",
+    "priceWithDiscount": "0.00"
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Mii",
+      "TraveledDistance": 20379344
+    },
+    "customerName": "Hipolito Lamoreaux",
+    "discount": "40.00",
+    "price": "0.00",
+    "priceWithDiscount": "0.00"
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "F430",
+      "TraveledDistance": 403805820
+    },
+    "customerName": "Zada Attwood",
+    "discount": "0.00",
+    "price": "0.00",
+    "priceWithDiscount": "0.00"
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Phantom",
+      "TraveledDistance": 208114157
+    },
+    "customerName": "Daniele Zarate",
+    "discount": "15.00",
+    "price": "0.00",
+    "priceWithDiscount": "0.00"
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Omega",
+      "TraveledDistance": 109910837
+    },
+    "customerName": "Zada Attwood",
+    "discount": "30.00",
+    "price": "0.00",
+    "priceWithDiscount": "0.00"
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "1M Coupe",
+      "TraveledDistance": 39826890
+    },
+    "customerName": "Marcelle Griego",
+    "discount": "0.00",
+    "price": "0.00",
+    "priceWithDiscount": "0.00"
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "X6 M",
+      "TraveledDistance": 227443571
+    },
+    "customerName": "Emmitt Benally",
+    "discount": "10.00",
+    "price": "0.00",
+    "priceWithDiscount": "0.00"
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Citigo",
+      "TraveledDistance": 326326638
+    },
+    "customerName": "Cinthia Lasala",
+    "discount": "30.00",
+    "price": "0.00",
+    "priceWithDiscount": "0.00"
+  }
+]

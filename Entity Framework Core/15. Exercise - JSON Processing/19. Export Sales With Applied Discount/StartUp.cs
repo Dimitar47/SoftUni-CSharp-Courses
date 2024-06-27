@@ -1,0 +1,117 @@
+﻿using CarDealer.Data;
+using CarDealer.DTOs.Import;
+using CarDealer.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.Internal;
+using Newtonsoft.Json;
+using System.Globalization;
+using System.Net.WebSockets;
+
+namespace CarDealer
+{
+    public class StartUp
+    {
+        public static void Main()
+        {
+            CarDealerContext context = new CarDealerContext();
+
+            context.Database.EnsureDeleted();
+            context.Database.EnsureCreated();
+
+            ImportData(context);
+
+            string result = GetSalesWithAppliedDiscount(context);
+            File.WriteAllText(@"D:\Users\admin\Desktop\C# DB_SoftUni\Entity Framework Core - June 2024\"
+           + @"15. Exercise - JSON Processing\19. Export Sales With Applied Discount\Datasets\sales-discounts.json",
+                            result);
+        }
+        public static void ImportData(CarDealerContext context)
+        {
+            string inputJSonSuppliers =
+             File.ReadAllText(@"D:\Users\admin\Desktop\C# DB_SoftUni\Entity Framework Core - June 2024\" +
+                             @"15. Exercise - JSON Processing\09. Import Suppliers\Datasets\suppliers.json");
+
+            string inputJSonParts =
+               File.ReadAllText(@"D:\Users\admin\Desktop\C# DB_SoftUni\Entity Framework Core - June 2024\"
+                              + @"15. Exercise - JSON Processing\10. Import Parts\Datasets\parts.json");
+
+            string inputJSonCars =
+             File.ReadAllText(@"D:\Users\admin\Desktop\C# DB_SoftUni\Entity Framework Core - June 2024\"
+                             + @"15. Exercise - JSON Processing\11. Import Cars\Datasets\cars.json");
+
+            string inputJSonCustomers =
+            File.ReadAllText(@"D:\Users\admin\Desktop\C# DB_SoftUni\Entity Framework Core - June 2024\"
+            + @"15. Exercise - JSON Processing\12. Import Customers\Datasets\customers.json");
+
+            string inputJSonSales =
+               File.ReadAllText(@"D:\Users\admin\Desktop\C# DB_SoftUni\Entity Framework Core - June 2024\"
+                       + @"15. Exercise - JSON Processing\13. Import Sales\Datasets\sales.json");
+            //suppliers
+            List<Supplier> suppliers = JsonConvert.DeserializeObject<List<Supplier>>(inputJSonSuppliers);
+            context.Suppliers.AddRange(suppliers);
+
+            //parts
+            int[] supplierIds = context.Suppliers.Select(x => x.Id).ToArray();
+            List<Part> parts = JsonConvert.DeserializeObject<List<Part>>(inputJSonParts)
+                .Where(x => supplierIds.Contains(x.SupplierId))
+                .ToList();
+            context.Parts.AddRange(parts);
+
+            //cars
+            var carsDto = JsonConvert.DeserializeObject<List<CarImportDto>>(inputJSonCars);
+            var partsIds = context.Parts.Select(p => p.Id).ToHashSet();
+
+            var cars = carsDto.Select(c => new Car
+            {
+                Make = c.Make,
+                Model = c.Model,
+                TraveledDistance = c.TraveledDistance,
+                PartsCars = c.PartsId.Distinct()
+                    .Where(pId => partsIds.Contains(pId))
+                    .Select(pId => new PartCar
+                    {
+                        PartId = pId
+                    })
+                    .ToList()
+            })
+            .ToList();
+
+            context.Cars.AddRange(cars);
+
+            //customers
+            List<Customer> customers = JsonConvert.DeserializeObject<List<Customer>>(inputJSonCustomers);
+            context.Customers.AddRange(customers);
+
+            //sales
+            List<Sale> sales = JsonConvert.DeserializeObject<List<Sale>>(inputJSonSales);
+            context.Sales.AddRange(sales);
+
+            context.SaveChanges();
+        }
+
+        public static string GetSalesWithAppliedDiscount(CarDealerContext context)
+        {
+            var salesWithDiscount = context.Sales
+                .Take(10)
+                .Select(s => new
+                {
+                    car = new
+                    {
+                        s.Car.Make,
+                        s.Car.Model,
+                        s.Car.TraveledDistance
+                    },
+                    customerName = s.Customer.Name,
+                    discount = $"{s.Discount:f2}",
+                    price = $"{s.Car.PartsCars.Sum(p => p.Part.Price):f2}",
+                    priceWithDiscount = $@"{(s.Car.PartsCars.Sum(p => p.Part.Price) - 
+                    (s.Car.PartsCars.Sum(p => p.Part.Price) * (s.Discount /100))):f2}"
+                })
+                .ToArray();
+
+            return JsonConvert.SerializeObject(salesWithDiscount, Formatting.Indented);
+        }
+
+
+    }
+}

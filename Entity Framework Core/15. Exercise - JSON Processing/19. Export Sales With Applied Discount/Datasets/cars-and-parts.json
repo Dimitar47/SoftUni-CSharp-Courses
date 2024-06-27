@@ -1,0 +1,2866 @@
+[
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Omega",
+      "TraveledDistance": 176664996
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Astra",
+      "TraveledDistance": 516628215
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Astra",
+      "TraveledDistance": 156191509
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Corsa",
+      "TraveledDistance": 347259126
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Kadet",
+      "TraveledDistance": 31737446
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Vectra",
+      "TraveledDistance": 238042093
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Insignia",
+      "TraveledDistance": 225253817
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Astra",
+      "TraveledDistance": 31468479
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Corsa",
+      "TraveledDistance": 282499542
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Omega",
+      "TraveledDistance": 111313670
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Insignia",
+      "TraveledDistance": 168539389
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Vectra",
+      "TraveledDistance": 433351992
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Astra",
+      "TraveledDistance": 349837452
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Omega",
+      "TraveledDistance": 109910837
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Corsa",
+      "TraveledDistance": 241891505
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Insignia",
+      "TraveledDistance": 339785118
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Omega",
+      "TraveledDistance": 254808828
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Corsa",
+      "TraveledDistance": 267253567
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Opel",
+      "Model": "Omega",
+      "TraveledDistance": 277250812
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "F20",
+      "TraveledDistance": 401291910
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "F25",
+      "TraveledDistance": 476132712
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "M5 F10",
+      "TraveledDistance": 140799461
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "F04",
+      "TraveledDistance": 418839575
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "E88",
+      "TraveledDistance": 27453411
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "M Roadster E85",
+      "TraveledDistance": 475685374
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "1M Coupe",
+      "TraveledDistance": 39826890
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "X6 M",
+      "TraveledDistance": 322292247
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "E67",
+      "TraveledDistance": 476830509
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "M6 E63",
+      "TraveledDistance": 57189891
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "M6 E63",
+      "TraveledDistance": 69863204
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "F20",
+      "TraveledDistance": 487897422
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "F04",
+      "TraveledDistance": 443756363
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "M5 F10",
+      "TraveledDistance": 435603343
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "X6 M",
+      "TraveledDistance": 227443571
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "F20",
+      "TraveledDistance": 284809463
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "X6 M",
+      "TraveledDistance": 183346013
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "F04",
+      "TraveledDistance": 265166885
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "F20",
+      "TraveledDistance": 171765152
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "BMW",
+      "Model": "M6 E63",
+      "TraveledDistance": 243205800
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Panda",
+      "TraveledDistance": 1591174
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Panda 4x4 Antarctica",
+      "TraveledDistance": 501838637
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "500 (2007) Abarth 695 Tributo Maserati",
+      "TraveledDistance": 73917184
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Panda 4x4 Antarctica",
+      "TraveledDistance": 388951228
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Panda 4x4",
+      "TraveledDistance": 94291695
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Panda",
+      "TraveledDistance": 271974888
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Freemont",
+      "TraveledDistance": 291375480
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "500L",
+      "TraveledDistance": 363056661
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Panda",
+      "TraveledDistance": 356486400
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Freemont",
+      "TraveledDistance": 46079092
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Panda 4x4",
+      "TraveledDistance": 506281363
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Panda 4x4 Antarctica",
+      "TraveledDistance": 147310005
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "500L",
+      "TraveledDistance": 450106773
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "500L",
+      "TraveledDistance": 418573870
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "500 (2007) Abarth 695 Tributo Maserati",
+      "TraveledDistance": 255814652
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Panda",
+      "TraveledDistance": 165915677
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "500L",
+      "TraveledDistance": 414493068
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Freemont",
+      "TraveledDistance": 476416173
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Panda 4x4",
+      "TraveledDistance": 507365630
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "500 (2007) Abarth 695 Tributo Maserati",
+      "TraveledDistance": 250201285
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "Freemont",
+      "TraveledDistance": 370538088
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Fiat",
+      "Model": "500L",
+      "TraveledDistance": 294377378
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "A 140",
+      "TraveledDistance": 127050841
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W212",
+      "TraveledDistance": 352906120
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "A 160",
+      "TraveledDistance": 69932764
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "A 160 CDI",
+      "TraveledDistance": 2043780
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W212",
+      "TraveledDistance": 103410558
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W202",
+      "TraveledDistance": 376376181
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W211",
+      "TraveledDistance": 501021413
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "A 170 CDI",
+      "TraveledDistance": 203728907
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W212",
+      "TraveledDistance": 437173024
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W124",
+      "TraveledDistance": 453245765
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W210",
+      "TraveledDistance": 461671208
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W202",
+      "TraveledDistance": 402675300
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W211",
+      "TraveledDistance": 132956063
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W212",
+      "TraveledDistance": 278080805
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W203",
+      "TraveledDistance": 259511953
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W211",
+      "TraveledDistance": 130475765
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W210",
+      "TraveledDistance": 181844305
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W204",
+      "TraveledDistance": 134106055
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W124",
+      "TraveledDistance": 41606319
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Mercedes",
+      "Model": "W212",
+      "TraveledDistance": 55397761
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Fiesta",
+      "TraveledDistance": 344433379
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Pinto",
+      "TraveledDistance": 288047842
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Torino",
+      "TraveledDistance": 450867168
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Fiesta",
+      "TraveledDistance": 301180732
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Pinto",
+      "TraveledDistance": 416418181
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Taurus",
+      "TraveledDistance": 403810025
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Fiesta",
+      "TraveledDistance": 37085116
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Torino",
+      "TraveledDistance": 440155426
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Pinto",
+      "TraveledDistance": 248943927
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "GT40",
+      "TraveledDistance": 85557373
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Pinto",
+      "TraveledDistance": 136428787
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "GT40",
+      "TraveledDistance": 300191400
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Fiesta",
+      "TraveledDistance": 251295244
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Torino",
+      "TraveledDistance": 85841328
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Fiesta",
+      "TraveledDistance": 232084221
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Pinto",
+      "TraveledDistance": 99638597
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Taurus",
+      "TraveledDistance": 176314890
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Fiesta",
+      "TraveledDistance": 470875447
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Torino",
+      "TraveledDistance": 25860756
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Ranger",
+      "TraveledDistance": 293626832
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Pinto",
+      "TraveledDistance": 240662780
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ford",
+      "Model": "Ranger",
+      "TraveledDistance": 10053919
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 508864707
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Tacoma",
+      "TraveledDistance": 431663130
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 64266329
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Tacoma",
+      "TraveledDistance": 426059006
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 142914233
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Corolla",
+      "TraveledDistance": 356361379
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Yaris",
+      "TraveledDistance": 285031257
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 141313729
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Camry Hybrid",
+      "TraveledDistance": 151868293
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Corolla",
+      "TraveledDistance": 230556000
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 65891391
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Corolla",
+      "TraveledDistance": 172436753
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Tacoma",
+      "TraveledDistance": 328571532
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Camry Hybrid",
+      "TraveledDistance": 217630531
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 280666484
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Tacoma",
+      "TraveledDistance": 147379564
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Corolla",
+      "TraveledDistance": 485584239
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 78228066
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Corolla",
+      "TraveledDistance": 196587490
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Yaris",
+      "TraveledDistance": 439493520
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Corolla",
+      "TraveledDistance": 333412512
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 208912076
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Tacoma",
+      "TraveledDistance": 174113404
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Yaris",
+      "TraveledDistance": 18776234
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 8676482
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Tacoma",
+      "TraveledDistance": 425742267
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 424624116
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Yaris",
+      "TraveledDistance": 17169781
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 332788407
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Tacoma",
+      "TraveledDistance": 89596390
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Camry Hybrid",
+      "TraveledDistance": 486872832
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 126607020
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Camry Hybrid",
+      "TraveledDistance": 193362513
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Prius",
+      "TraveledDistance": 191675886
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Tacoma",
+      "TraveledDistance": 157810668
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Toyota",
+      "Model": "Camry Hybrid",
+      "TraveledDistance": 397831570
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "GT-R",
+      "TraveledDistance": 94210828
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Altima",
+      "TraveledDistance": 368986707
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "GT-R",
+      "TraveledDistance": 118192217
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "370Z",
+      "TraveledDistance": 59351269
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "GT-R",
+      "TraveledDistance": 12420594
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Altima",
+      "TraveledDistance": 486257730
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "GT-R",
+      "TraveledDistance": 312316612
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "370Z",
+      "TraveledDistance": 284500319
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "370Z",
+      "TraveledDistance": 91596434
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Altima",
+      "TraveledDistance": 457486023
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "370Z",
+      "TraveledDistance": 135897329
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Altima",
+      "TraveledDistance": 393081223
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "GT-R",
+      "TraveledDistance": 197599645
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Altima",
+      "TraveledDistance": 407562858
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "370Z",
+      "TraveledDistance": 363918741
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "GT-R",
+      "TraveledDistance": 326260222
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Versa",
+      "TraveledDistance": 475666874
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Altima",
+      "TraveledDistance": 179796793
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "370Z",
+      "TraveledDistance": 55268939
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "GT-R",
+      "TraveledDistance": 157249056
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Rogue",
+      "TraveledDistance": 114846152
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Altima",
+      "TraveledDistance": 424117627
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "GT-R",
+      "TraveledDistance": 274678949
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Altima",
+      "TraveledDistance": 95799498
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Rogue",
+      "TraveledDistance": 310364796
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "GT-R",
+      "TraveledDistance": 125157902
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Altima",
+      "TraveledDistance": 187152855
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Versa",
+      "TraveledDistance": 440899435
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "GT-R",
+      "TraveledDistance": 122310701
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Nissan",
+      "Model": "Versa",
+      "TraveledDistance": 317911903
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Great Wall",
+      "Model": "H2",
+      "TraveledDistance": 357701772
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Great Wall",
+      "Model": "Haval M4",
+      "TraveledDistance": 515523178
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Great Wall",
+      "Model": "H2",
+      "TraveledDistance": 438447396
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Great Wall",
+      "Model": "H8",
+      "TraveledDistance": 261462447
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Great Wall",
+      "Model": "Steed 3",
+      "TraveledDistance": 431796268
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Great Wall",
+      "Model": "Wingle 5",
+      "TraveledDistance": 495225064
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Great Wall",
+      "Model": "Haval M4",
+      "TraveledDistance": 338663381
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Great Wall",
+      "Model": "Haval H6",
+      "TraveledDistance": 515863753
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Alaskan",
+      "TraveledDistance": 284369351
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Clio IV",
+      "TraveledDistance": 225782314
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Duster",
+      "TraveledDistance": 275222997
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Alaskan",
+      "TraveledDistance": 268240617
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Alaskan",
+      "TraveledDistance": 305807332
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Duster",
+      "TraveledDistance": 451149098
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Alaskan",
+      "TraveledDistance": 147141364
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Clio IV",
+      "TraveledDistance": 410170426
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Duster",
+      "TraveledDistance": 198197668
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Alaskan",
+      "TraveledDistance": 303853081
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Captur",
+      "TraveledDistance": 104305182
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Alaskan",
+      "TraveledDistance": 17909035
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Espace",
+      "TraveledDistance": 29567678
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Alaskan",
+      "TraveledDistance": 392193253
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Captur",
+      "TraveledDistance": 515034479
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Renault",
+      "Model": "Espace",
+      "TraveledDistance": 379189144
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Camaro",
+      "TraveledDistance": 140281843
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Caprice",
+      "TraveledDistance": 48720733
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Camaro",
+      "TraveledDistance": 472935290
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Caprice",
+      "TraveledDistance": 401020251
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Malibu",
+      "TraveledDistance": 127614006
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Camaro",
+      "TraveledDistance": 265890224
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Impala",
+      "TraveledDistance": 156401301
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Malibu",
+      "TraveledDistance": 250044709
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Impala",
+      "TraveledDistance": 19486044
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Camaro",
+      "TraveledDistance": 152312063
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Camaro",
+      "TraveledDistance": 478411784
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Corvette",
+      "TraveledDistance": 520332790
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Cruze",
+      "TraveledDistance": 333261359
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Corvette",
+      "TraveledDistance": 314764731
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Camaro",
+      "TraveledDistance": 354394122
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Caprice",
+      "TraveledDistance": 247321209
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Cruze",
+      "TraveledDistance": 366224374
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Caprice",
+      "TraveledDistance": 338430654
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Chevy",
+      "Model": "Matiz",
+      "TraveledDistance": 274054974
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Phantom",
+      "TraveledDistance": 208114157
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Phantom Drophead Coupé",
+      "TraveledDistance": 260653592
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Phantom",
+      "TraveledDistance": 225233067
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Ghost",
+      "TraveledDistance": 496937828
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Dawn",
+      "TraveledDistance": 202157384
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Phantom",
+      "TraveledDistance": 327285667
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Ghost",
+      "TraveledDistance": 278821902
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Wraith",
+      "TraveledDistance": 305587766
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Phantom Drophead Coupé",
+      "TraveledDistance": 261927306
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Wraith",
+      "TraveledDistance": 193890679
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Rolls-Royce",
+      "Model": "Phantom Drophead Coupé",
+      "TraveledDistance": 483029198
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Lamborghini",
+      "Model": "Gallardo",
+      "TraveledDistance": 145640651
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Lamborghini",
+      "Model": "Murciélago",
+      "TraveledDistance": 344136052
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Lamborghini",
+      "Model": "Diablo",
+      "TraveledDistance": 379116231
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Lamborghini",
+      "Model": "Gallardo",
+      "TraveledDistance": 437885784
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Lamborghini",
+      "Model": "Murciélago",
+      "TraveledDistance": 499808136
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Lamborghini",
+      "Model": "Gallardo",
+      "TraveledDistance": 240371960
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Lamborghini",
+      "Model": "Diablo",
+      "TraveledDistance": 400917306
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "Daytona",
+      "TraveledDistance": 316270662
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "250 GTO",
+      "TraveledDistance": 245546172
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "F430",
+      "TraveledDistance": 397106659
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "275",
+      "TraveledDistance": 448008546
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "F430",
+      "TraveledDistance": 403805820
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "F40",
+      "TraveledDistance": 106050998
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "250 GTO",
+      "TraveledDistance": 10791694
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "Daytona",
+      "TraveledDistance": 351364846
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "275",
+      "TraveledDistance": 5436105
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "250 GTO",
+      "TraveledDistance": 455536599
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "F40",
+      "TraveledDistance": 262060470
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "250 GTO",
+      "TraveledDistance": 328086491
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "F430",
+      "TraveledDistance": 235611505
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "Daytona",
+      "TraveledDistance": 30312194
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "F40",
+      "TraveledDistance": 69764556
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "250 GTO",
+      "TraveledDistance": 496765811
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "275",
+      "TraveledDistance": 164216748
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "Enzo",
+      "TraveledDistance": 497163085
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Ferrari",
+      "Model": "Daytona",
+      "TraveledDistance": 293676308
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "Giulia",
+      "TraveledDistance": 451741545
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "Giulietta",
+      "TraveledDistance": 128074332
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "AR51",
+      "TraveledDistance": 452362116
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "Alfetta",
+      "TraveledDistance": 227419636
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "75",
+      "TraveledDistance": 338929990
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "AR51",
+      "TraveledDistance": 273101528
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "156",
+      "TraveledDistance": 434781563
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "Giulietta",
+      "TraveledDistance": 436415485
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "164",
+      "TraveledDistance": 385298945
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "75",
+      "TraveledDistance": 512903265
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "Giulietta",
+      "TraveledDistance": 519844092
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "156",
+      "TraveledDistance": 274003107
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "Giulietta",
+      "TraveledDistance": 193584127
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Alfa Romeo",
+      "Model": "75",
+      "TraveledDistance": 492649694
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "206",
+      "TraveledDistance": 225031436
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "405",
+      "TraveledDistance": 428581244
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "206",
+      "TraveledDistance": 471512014
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "405",
+      "TraveledDistance": 255575847
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "306",
+      "TraveledDistance": 138733144
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "308",
+      "TraveledDistance": 235475304
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "407",
+      "TraveledDistance": 497809602
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "306",
+      "TraveledDistance": 343442559
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "308",
+      "TraveledDistance": 229420070
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "405",
+      "TraveledDistance": 179145987
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "306",
+      "TraveledDistance": 201912836
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "407",
+      "TraveledDistance": 422154829
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "206",
+      "TraveledDistance": 312468347
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "407",
+      "TraveledDistance": 336906707
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "206",
+      "TraveledDistance": 310013429
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "308",
+      "TraveledDistance": 454503627
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "405",
+      "TraveledDistance": 225997773
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "306",
+      "TraveledDistance": 72195908
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "405",
+      "TraveledDistance": 319350232
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "308",
+      "TraveledDistance": 63428253
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "206",
+      "TraveledDistance": 167257947
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Peugeot",
+      "Model": "206",
+      "TraveledDistance": 130139399
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "Berlingo",
+      "TraveledDistance": 242536078
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C1",
+      "TraveledDistance": 396754068
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "Berlingo",
+      "TraveledDistance": 436804201
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C5",
+      "TraveledDistance": 32203443
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C5",
+      "TraveledDistance": 347651789
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C8",
+      "TraveledDistance": 48263045
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "Elysée",
+      "TraveledDistance": 4120281
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C1",
+      "TraveledDistance": 217089114
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C4",
+      "TraveledDistance": 385550653
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C5",
+      "TraveledDistance": 38829917
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C1",
+      "TraveledDistance": 447103875
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C3",
+      "TraveledDistance": 214064329
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C1",
+      "TraveledDistance": 389207601
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C4",
+      "TraveledDistance": 501689589
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C1",
+      "TraveledDistance": 498211182
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C5",
+      "TraveledDistance": 98486390
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C3",
+      "TraveledDistance": 404111136
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C8",
+      "TraveledDistance": 118984206
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C1",
+      "TraveledDistance": 174494239
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C3",
+      "TraveledDistance": 486926519
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "Elysée",
+      "TraveledDistance": 277281794
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C1",
+      "TraveledDistance": 130512554
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C4",
+      "TraveledDistance": 404134333
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C3",
+      "TraveledDistance": 295402694
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C1",
+      "TraveledDistance": 339260713
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C5",
+      "TraveledDistance": 476502389
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C1",
+      "TraveledDistance": 505029588
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Citroen",
+      "Model": "C8",
+      "TraveledDistance": 309422851
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Toledo",
+      "TraveledDistance": 144201918
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Mii",
+      "TraveledDistance": 304944609
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Ibiza",
+      "TraveledDistance": 333280407
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Mii",
+      "TraveledDistance": 508783407
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Ibiza",
+      "TraveledDistance": 182688172
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Mii",
+      "TraveledDistance": 473519569
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Toledo",
+      "TraveledDistance": 43341591
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Toledo",
+      "TraveledDistance": 453385478
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Ibiza",
+      "TraveledDistance": 197399178
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Mii",
+      "TraveledDistance": 485157233
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Toledo",
+      "TraveledDistance": 266451047
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Mii",
+      "TraveledDistance": 306842982
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Toledo",
+      "TraveledDistance": 196618703
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Ibiza",
+      "TraveledDistance": 390958489
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Toledo",
+      "TraveledDistance": 172222867
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Seat",
+      "Model": "Mii",
+      "TraveledDistance": 20379344
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Citigo",
+      "TraveledDistance": 353678487
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Rapid Spaceback",
+      "TraveledDistance": 477031551
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Citigo",
+      "TraveledDistance": 326326638
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Citigo",
+      "TraveledDistance": 186951373
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Citigo",
+      "TraveledDistance": 334919977
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Fabia",
+      "TraveledDistance": 506138915
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Citigo",
+      "TraveledDistance": 46712305
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Fabia",
+      "TraveledDistance": 57662452
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Rapid",
+      "TraveledDistance": 267561546
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Fabia",
+      "TraveledDistance": 58958961
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Fabia",
+      "TraveledDistance": 231485138
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Rapid",
+      "TraveledDistance": 490651056
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Rapid Spaceback",
+      "TraveledDistance": 371247268
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Skoda",
+      "Model": "Fabia",
+      "TraveledDistance": 520029040
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Logan",
+      "TraveledDistance": 71570263
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Sandero Stepway",
+      "TraveledDistance": 249776933
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Sandero",
+      "TraveledDistance": 443192096
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Dokker",
+      "TraveledDistance": 73324963
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Sandero",
+      "TraveledDistance": 451514728
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Logan",
+      "TraveledDistance": 459233576
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Logan",
+      "TraveledDistance": 84177042
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Dokker",
+      "TraveledDistance": 316948000
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Sandero",
+      "TraveledDistance": 410003689
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Dokker",
+      "TraveledDistance": 294315564
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Logan",
+      "TraveledDistance": 315644424
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Duster",
+      "TraveledDistance": 423453236
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Sandero Stepway",
+      "TraveledDistance": 279714744
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Duster",
+      "TraveledDistance": 297581436
+    },
+    "parts": []
+  },
+  {
+    "car": {
+      "Make": "Dacia",
+      "Model": "Logan",
+      "TraveledDistance": 231160691
+    },
+    "parts": []
+  }
+]
