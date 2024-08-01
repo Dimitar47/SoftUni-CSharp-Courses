@@ -11,8 +11,7 @@ namespace CarDealer
         public static void Main()
         {
             using CarDealerContext context = new CarDealerContext();
-            context.Database.EnsureDeleted();
-            context.Database.EnsureCreated();
+          
 
 
             ImportData(context);

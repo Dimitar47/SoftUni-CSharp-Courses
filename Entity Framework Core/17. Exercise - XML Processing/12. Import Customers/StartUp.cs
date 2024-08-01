@@ -11,8 +11,6 @@ namespace CarDealer
         {
             var context = new CarDealerContext();
 
-            context.Database.EnsureDeleted();
-            context.Database.EnsureCreated();
 
             string suppliersFilePath = @"../../../Datasets/suppliers.xml";
             string suppliersXml = File.ReadAllText(suppliersFilePath);

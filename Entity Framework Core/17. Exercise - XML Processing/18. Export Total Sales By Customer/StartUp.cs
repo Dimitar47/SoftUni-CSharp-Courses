@@ -13,7 +13,7 @@ namespace CarDealer
         public static void Main()
         {
             var context = new CarDealerContext();
-
+         
 
             string result = GetTotalSalesByCustomer(context);
             File.WriteAllText(
@@ -41,7 +41,6 @@ namespace CarDealer
 
 
         }
-
 
         public static string GetTotalSalesByCustomer(CarDealerContext context)
         {
