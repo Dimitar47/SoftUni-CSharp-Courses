@@ -1,0 +1,80 @@
+﻿@using HotelApp.Web.ViewModels.Hotel
+@using HotelApp.Web.ViewModels.Room
+
+@model HotelDetailsViewModel
+
+@{
+    ViewData["Title"] = "Hotel Details";
+}
+
+<h2>@Model.Name</h2>
+
+<div class="row">
+    <!-- Hotel Image -->
+    <div class="col-md-4">
+        <img src="@(!string.IsNullOrWhiteSpace(Model.ImageURL) ? Model.ImageURL : Url.Content("~/images/no-image.png"))"
+             alt="Image of Hotel @Model.Name" class="img-fluid rounded" />
+    </div>
+
+    <!-- Hotel Details -->
+    <div class="col-md-8">
+        <p><strong>Address:</strong> @Model.Address</p>
+        <p><strong>Phone:</strong> @Model.Phone</p>
+        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Stars:</strong> @Model.Stars</p>
+        <p><strong>Check-in Time:</strong> @Model.CheckinTime</p>
+        <p><strong>Check-out Time:</strong> @Model.CheckoutTime</p>
+    </div>
+</div>
+
+<h3 class="mt-5">Rooms Currently Present in the Hotel:</h3>
+
+@if (Model.Rooms.Any())
+{
+    <div class="row">
+        @foreach (HotelRoomViewModel room in Model.Rooms)
+        {
+            <div class="col-md-4 mb-4">
+                <!-- Card for each room -->
+                <div class="card">
+                    <img src="@(!string.IsNullOrWhiteSpace(room.ImageURL) ? room.ImageURL : Url.Content("~/images/no-image.png"))"
+                         alt="Image of room @room.RoomNumber" class="card-img-top" style="max-height: 200px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Room @room.RoomNumber</h5>
+                        <p class="card-text">Status: @room.Status</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>No rooms are currently present in the hotel.</p>
+}
+<h3 class="mt-5">Unassociated Rooms Currently Present in the System:</h3>
+@if (Model.UnassociatedRooms.Any())
+{
+
+    <div class="row">
+        @foreach (HotelRoomViewModel room in Model.UnassociatedRooms)
+        {
+            <div class="col-md-4 mb-4">
+                <!-- Card for each unassociated room -->
+                <div class="card">
+                    <img src="@(!string.IsNullOrWhiteSpace(room.ImageURL) ? room.ImageURL : Url.Content("~/images/no-image.png"))"
+                         alt="Image of room @room.RoomNumber" class="card-img-top" style="max-height: 200px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Room @room.RoomNumber (Unassociated)</h5>
+                        <p class="card-text">Status: @room.Status</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>No unassociated rooms in the system.</p>
+}
+<a asp-action="Index" class="btn btn-primary mt-4">Back to All Hotels</a>
