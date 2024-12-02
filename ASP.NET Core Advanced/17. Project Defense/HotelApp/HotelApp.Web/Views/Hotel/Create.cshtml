@@ -1,0 +1,66 @@
+﻿@using HotelApp.Web.ViewModels.Hotel
+@model AddHotelFormModel
+
+
+@{
+    ViewData["Title"] = "Add a hotel";
+}
+
+<h2>Add a New Hotel</h2>
+
+<form asp-action="Create" method="post">
+
+
+    <div>
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Address">Address</label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="ImageURL">Image URL</label>
+        <input asp-for="ImageURL" class="form-control" />
+        <span asp-validation-for="ImageURL" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Phone">Phone</label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Stars">Stars</label>
+        <input asp-for="Stars" class="form-control" />
+        <span asp-validation-for="Stars" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="CheckinTime">Check-in Time</label>
+        <input asp-for="CheckinTime" type="time" class="form-control" />
+        <span asp-validation-for="CheckinTime" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="CheckoutTime">Check-out Time</label>
+        <input asp-for="CheckoutTime" type="time" class="form-control" />
+        <span asp-validation-for="CheckoutTime" class="text-danger"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary mt-2">Create Hotel</button>
+</form>
+<a asp-action="Index">Back to Hotels List</a>
+
