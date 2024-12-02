@@ -159,6 +159,107 @@ namespace HotelApp.Web.Controllers
             return this.View(viewModel);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Edit(string? id)
+        {
+            Guid hotelGuid = Guid.Empty;
+            bool isGuidValid = this.IsGuidValid(id, ref hotelGuid);
+
+            if (!isGuidValid)
+            {
+                // Invalid id format
+                return this.RedirectToAction(nameof(Index));
+            }
+
+            var hotel = await dbContext.Hotels
+                                    .Where(h => h.IsDeleted == false)
+                                    .FirstOrDefaultAsync(h => h.Id == hotelGuid);
+
+            if (hotel == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+
+            var model = new EditHotelFormModel
+            {
+                Id = hotel.Id.ToString(),
+                Name = hotel.Name,
+                Address = hotel.Address,
+                ImageURL = hotel.ImageURL,
+                Phone = hotel.Phone,
+                Email = hotel.Email,
+                Stars = hotel.Stars,
+                CheckinTime = hotel.CheckinTime.ToString(CheckInOutTimeSpanFormat, CultureInfo.InvariantCulture),
+                CheckoutTime = hotel.CheckoutTime.ToString(CheckInOutTimeSpanFormat, CultureInfo.InvariantCulture)
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(EditHotelFormModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            Guid hotelGuid = Guid.Empty;
+            bool isGuidValid = this.IsGuidValid(model.Id, ref hotelGuid);
+
+            if (!isGuidValid)
+            {
+                return this.RedirectToAction(nameof(Index));
+            }
+
+
+            bool isCheckinTimeValid = TimeSpan.TryParseExact(model.CheckinTime, CheckInOutTimeSpanFormat, CultureInfo.InvariantCulture, TimeSpanStyles.None, out TimeSpan validCheckinTime);
+
+            if (!isCheckinTimeValid)
+            {
+                ModelState.AddModelError(nameof(model.CheckinTime), $"The Check-in Time must be in the format {CheckInOutTimeSpanFormat}.");
+            }
+
+
+            bool isCheckoutTimeValid = TimeSpan.TryParseExact(model.CheckoutTime, CheckInOutTimeSpanFormat, CultureInfo.InvariantCulture, TimeSpanStyles.None, out TimeSpan validCheckoutTime);
+
+            if (!isCheckoutTimeValid)
+            {
+                ModelState.AddModelError(nameof(model.CheckoutTime), $"The Check-out Time must be in the format {CheckInOutTimeSpanFormat}.");
+            }
+
+            if (!ModelState.IsValid)
+            {
+
+                return View(model);
+            }
+
+
+            var hotel = await dbContext.Hotels
+                                        .Where(h => h.IsDeleted == false)
+                                        .FirstOrDefaultAsync(h => h.Id.ToString() == model.Id);
+
+            if (hotel == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+
+            hotel.Name = model.Name;
+            hotel.Address = model.Address;
+            hotel.ImageURL = model.ImageURL;
+            hotel.Phone = model.Phone;
+            hotel.Email = model.Email;
+            hotel.Stars = model.Stars;
+            hotel.CheckinTime = validCheckinTime;
+            hotel.CheckoutTime = validCheckoutTime;
+
+            await dbContext.SaveChangesAsync();
+
+
+            return RedirectToAction(nameof(Index));
+        }
 
 
     }
