@@ -1,0 +1,39 @@
+﻿@using HotelApp.Web.ViewModels.Room;
+
+@model RoomDetailsViewModel
+
+@{
+    ViewData["Title"] = "Room Details";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card mb-4 shadow-sm">
+                <img src="@(!string.IsNullOrWhiteSpace(Model.ImageURL) ? Model.ImageURL : Url.Content("~/images/no-image.png"))"
+                     class="card-img-top" alt="Image of room @Model.RoomNumber" style="height: 200px; object-fit: cover;" />
+
+                <div class="card-body">
+                    <h5 class="card-subtitle mb-2 text-muted">Room @Model.RoomNumber</h5>
+
+                    <p><strong>Associated Hotels:</strong></p>
+                    <ul style="list-style-type:none;">
+                        @foreach (var hotel in Model.Hotels)
+                        {
+                            <li>@hotel</li>
+                        }
+                    </ul>
+
+                    <p><strong>Status:</strong> @Model.Status</p>
+
+                    <p><strong>Room Type:</strong> @Model.TypeName</p>
+                    <p><strong>Price:</strong> @Model.TypePricePerNight.ToString("C")</p>
+                    <p><strong>Description:</strong> @Model.TypeDescription</p>
+                    <p><strong>Capacity:</strong> @Model.TypeCapacity</p>
+
+                    <a asp-action="Index" class="btn btn-primary">Back to All Rooms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -202,6 +202,60 @@ namespace HotelApp.Web.Controllers
         }
 
 
+        [HttpGet]
+        public async Task<IActionResult> Details(string? id)
+        {
+            Guid roomGuid = Guid.Empty;
+            bool isGuidValid = this.IsGuidValid(id, ref roomGuid);
+
+            if (!isGuidValid)
+            {
+                // Invalid id format
+                return this.RedirectToAction(nameof(Index));
+            }
+
+            Room? room = await this.dbContext.Rooms
+                                    .Where(r => r.IsDeleted == false)
+                                    .Include(r => r.RoomType)
+                                    .Include(r => r.RoomHotels)
+                                    .ThenInclude(rh => rh.Hotel)
+                                    .FirstOrDefaultAsync(r => r.Id == roomGuid);
+
+
+            if (room == null)
+            {
+                // Non-existing room guid
+                return this.RedirectToAction(nameof(Index));
+            }
+
+            RoomDetailsViewModel viewModel = new RoomDetailsViewModel()
+            {
+                Hotels = room.RoomHotels
+                  .Where(hr => hr.IsDeleted == false && hr.Hotel.IsDeleted == false && hr.Room.IsDeleted == false)
+                 .Select(hr => $"{hr.Hotel?.Name ?? "Unassociated"} - {hr.Hotel?.Address ?? "N/A"}")
+                 .ToList(),
+                RoomNumber = room.RoomNumber,
+                Status = room.Status,
+                ImageURL = room.ImageURL,
+                TypeName = room.RoomType.Name,
+                TypeDescription = room.RoomType.Description,
+                TypePricePerNight = room.RoomType.PricePerNight,
+                TypeCapacity = room.RoomType.Capacity
+            };
+
+
+            if (viewModel.Hotels.Count == 0)
+            {
+                viewModel.Hotels.Add("This room is not yet associated with any hotel.");
+            }
+
+            return this.View(viewModel);
+
+
+
+        }
+
+
 
     }
 }
