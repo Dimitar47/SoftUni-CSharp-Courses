@@ -262,5 +262,58 @@ namespace HotelApp.Web.Controllers
         }
 
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(string? id)
+        {
+            Guid hotelGuid = Guid.Empty;
+            bool isGuidValid = this.IsGuidValid(id, ref hotelGuid);
+
+            if (!isGuidValid)
+            {
+                return this.RedirectToAction(nameof(Index));
+            }
+
+            var hotel = await dbContext.Hotels
+                               .Include(h => h.HotelRooms.Where(hr => !hr.IsDeleted))
+                               .ThenInclude(hr => hr.Room)
+                               .FirstOrDefaultAsync(h => h.Id == hotelGuid && !h.IsDeleted);
+
+            if (hotel == null)
+            {
+                return this.RedirectToAction(nameof(Index));
+            }
+
+
+            using var transaction = await dbContext.Database.BeginTransactionAsync();
+            try
+            {
+                if (hotel.HotelRooms.Any())
+                {
+                    foreach (var hotelRoom in hotel.HotelRooms)
+                    {
+                        hotelRoom.IsDeleted = true;
+                        hotelRoom.Hotel.Name = "Unassociated";
+                        hotelRoom.Hotel.Address = "N/A";
+                        hotelRoom.Room.Status = "Available";
+                    }
+                }
+                hotel.IsDeleted = true;
+
+
+                await dbContext.SaveChangesAsync();
+                await transaction.CommitAsync();
+            }
+            catch
+            {
+                await transaction.RollbackAsync();
+                throw;
+            }
+
+            return this.RedirectToAction(nameof(Index));
+        }
+
+
+
     }
 }
