@@ -1,0 +1,125 @@
+﻿@using HotelApp.Web.ViewModels.Room
+@model IEnumerable<RoomIndexViewModel>
+
+@{
+    ViewData["Title"] = "All Rooms";
+}
+
+<h2>All Rooms</h2>
+
+<!-- Button to add a new room -->
+<a asp-action="Create" class="btn btn-success mb-4">Add New Room</a>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Room Number</th>
+            <th>Hotel Name</th>
+            <th>Hotel Address</th>
+            <th>Status</th>
+            <th>Room Type</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var room in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@(!string.IsNullOrWhiteSpace(room.ImageURL) ? room.ImageURL : Url.Content("~/images/no-image.png"))"
+                         alt="Image of room @room.RoomNumber" style="width: 100px; height: auto;" />
+                </td>
+                <td>@room.RoomNumber</td>
+                <td>@room.HotelName</td>
+                <td>@room.HotelAddress</td>
+                <td>@room.Status</td>
+                <td>@room.RoomTypeName</td>
+
+                <td>
+                    <a asp-action="Details" asp-route-id="@room.Id" class="btn btn-info">Details</a>
+             
+                    @if (room.HotelName == "Unassociated")
+                    {
+                        <a asp-action="AddToHotel" asp-route-id="@room.Id" class="btn btn-info">Add to Hotel</a>
+                    }
+                    <a asp-action="Edit" asp-route-id="@room.Id" class="btn btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@room.Id" class="btn btn-danger">Delete</a>
+                   
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*
+<div class="row">
+
+    @foreach (var room in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+
+                <img src="@(!string.IsNullOrWhiteSpace(room.ImageURL) ? room.ImageURL : Url.Content("~/images/no-image.png"))"
+                     class="card-img-top" alt="Image of room @room.RoomNumber" style="height: auto; object-fit: cover;" />
+
+
+                <div class="card-body">
+                    <h2 class="card-title">@room.HotelName</h2>
+                    <h5 class="card-subtitle">Room @room.RoomNumber</h5>
+                    <p class="card-text">@room.Status</p>
+
+
+                 
+                    <p class="card-text">
+                        <strong>Type:</strong> @room.RoomTypeName<br />
+                        <strong>Description:</strong> @room.RoomTypeDescription<br />
+                        <strong>Price:</strong> @room.RoomTypePrice.ToString("C")
+                
+                    </p>
+                
+
+                    <a asp-action="Details" asp-route-id="@room.Id" class="btn btn-primary">View Room Details</a>
+
+                </div>
+
+
+            </div>
+        </div>
+    }
+
+</div>
+*@
