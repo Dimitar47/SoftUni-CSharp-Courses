@@ -1,0 +1,63 @@
+﻿@using HotelApp.Web.ViewModels.Room;
+@model AddRoomFormModel
+
+@{
+    ViewData["Title"] = "Add Room";
+}
+
+<h2>Add a New Room</h2>
+
+
+<form asp-action="Create" method="post">
+
+    <div class="form-group">
+        <label asp-for="RoomNumber" class="control-label"></label>
+        <input asp-for="RoomNumber" class="form-control" />
+        <span asp-validation-for="RoomNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ImageURL" class="control-label"></label>
+        <input asp-for="ImageURL" class="form-control" />
+        <span asp-validation-for="ImageURL" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="HotelId" class="control-label"></label>
+        <select asp-for="HotelId" class="form-control" asp-items="Model.Hotels">
+            <option value="">Unassociated</option>
+        </select>
+        <span asp-validation-for="HotelId" class="text-danger"></span>
+    </div>
+ 
+    <div class="form-group">
+        <label asp-for="RoomTypeId" class="control-label"></label>
+        <select asp-for="RoomTypeId" class="form-control" asp-items="Model.RoomTypes"></select>
+        <span asp-validation-for="RoomTypeId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <button type="submit" class="btn btn-primary">Add Room</button>
+        <a asp-action="Index" class="btn btn-secondary ml-2">Back to List</a>
+    </div>
+</form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
+
+@*
+       Status for the room is always set to available when the room is created. Uncomment this block of code if you want to set
+       the status of the room by yourself.
+
+    <div class="form-group">
+        <label asp-for="Status" class="control-label"></label>
+        <select asp-for="Status" class="form-control">
+            <option value="Available">Available</option>
+            <option value="Occupied">Occupied</option>
+            <option value="Cleaning">Cleaning</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+    *@
