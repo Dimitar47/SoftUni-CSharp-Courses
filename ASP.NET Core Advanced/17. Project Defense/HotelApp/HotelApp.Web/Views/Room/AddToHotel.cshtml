@@ -1,0 +1,37 @@
+﻿@using HotelApp.Web.ViewModels.Room
+@using HotelApp.Web.ViewModels.Hotel
+@model AddRoomToHotelInputModel
+
+@{
+    ViewData["Title"] = "Add Room to Hotel";
+}
+
+<h2>Add Room @Model.RoomNumber to Hotel</h2>
+
+<form asp-action="AddToHotel" method="post">
+
+    <input type="hidden" asp-for="RoomId" />
+    <input type="hidden" asp-for="RoomNumber" />
+
+    <h3>Select the hotel to add the room to:</h3>
+
+    <div class="form-group mb-3">
+        <label asp-for="SelectedHotelId" class="control-label"></label>
+        <select asp-for="SelectedHotelId" class="form-control" asp-items="Model.Hotels"></select>
+        <span asp-validation-for="SelectedHotelId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Confirm</button>
+</form>
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Back to Rooms</a>
+
+
+
+
+
+
+
+
+
+

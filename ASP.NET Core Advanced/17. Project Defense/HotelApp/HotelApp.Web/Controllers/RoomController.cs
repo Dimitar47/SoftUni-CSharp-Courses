@@ -536,7 +536,135 @@ namespace HotelApp.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpGet]
+        public async Task<IActionResult> AddToHotel(string? id)
+        {
+            Guid roomGuid = Guid.Empty;
+            bool isGuidValid = this.IsGuidValid(id, ref roomGuid);
 
+            if (!isGuidValid)
+            {
+                return this.RedirectToAction(nameof(Index));
+            }
+
+            Room? room = await this.dbContext.Rooms
+                                    .Where(r => r.IsDeleted == false && !r.RoomHotels.Any(rh => !rh.IsDeleted && !rh.Hotel.IsDeleted)
+                                                      )
+                                     .Include(r => r.RoomHotels)
+                                     .ThenInclude(r => r.Hotel)
+
+                                     .FirstOrDefaultAsync(r => r.Id == roomGuid);
+
+            if (room == null)
+            {
+                return this.RedirectToAction(nameof(Index));
+            }
+
+            AddRoomToHotelInputModel viewModel = new AddRoomToHotelInputModel()
+            {
+                RoomId = roomGuid.ToString(),
+                RoomNumber = room.RoomNumber,
+                Hotels = await this.dbContext.Hotels
+                    .Where(h => h.IsDeleted == false)
+                    .Select(h => new SelectListItem
+                    {
+                        Value = h.Id.ToString(),
+                        Text = $"{h.Name}, {h.Address}"
+                    })
+                    .ToListAsync()
+            };
+
+            return this.View(viewModel);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> AddToHotel(AddRoomToHotelInputModel model)
+        {
+            if (!this.ModelState.IsValid)
+            {
+
+                model.Hotels = await this.dbContext.Hotels
+                                .Where(h => h.IsDeleted == false)
+                                .Select(h => new SelectListItem
+                                {
+                                    Value = h.Id.ToString(),
+                                    Text = $"{h.Name}, {h.Address}"
+                                })
+                                .ToListAsync();
+                return this.View(model);
+            }
+
+            Guid roomGuid = Guid.Empty;
+            bool isRoomGuidValid = this.IsGuidValid(model.RoomId, ref roomGuid);
+
+            if (!isRoomGuidValid)
+            {
+                return this.RedirectToAction(nameof(Index));
+            }
+
+
+            Room? room = await this.dbContext.Rooms
+                                             .Where(r => r.IsDeleted == false)
+                                             .Include(r => r.RoomHotels)
+                                             .ThenInclude(r => r.Hotel)
+                                             .FirstOrDefaultAsync(r => r.Id == roomGuid);
+
+            if (room == null)
+            {
+                return this.RedirectToAction(nameof(Index));
+            }
+
+            Guid hotelGuid = Guid.Empty;
+            bool isHotelGuidValid = this.IsGuidValid(model.SelectedHotelId, ref hotelGuid);
+
+            if (!isHotelGuidValid)
+            {
+                this.ModelState.AddModelError("", "Invalid hotel selected!");
+                return this.View(model);
+            }
+
+            Hotel? hotel = await this.dbContext.Hotels
+                                    .Where(h => h.IsDeleted == false)
+                                   .Include(h => h.HotelRooms)
+                                   .ThenInclude(hr => hr.Room)
+                                   .FirstOrDefaultAsync(h => h.Id == hotelGuid);
+
+
+            if (hotel == null)
+            {
+                this.ModelState.AddModelError("", "Invalid hotel selected!");
+                return this.View(model);
+            }
+
+            // Check if a room with the same number exists in the hotel
+            if (hotel.HotelRooms.Where(hr => hr.IsDeleted == false && hr.Room.IsDeleted == false)
+                                .Any(hr => hr.Room.RoomNumber == model.RoomNumber))
+            {
+                this.ModelState.AddModelError("SelectedHotelId", $"A room with number {model.RoomNumber} already exists in the selected hotel.");
+                model.Hotels = await this.dbContext.Hotels.Where(h => h.IsDeleted == false)
+                                    .Select(h => new SelectListItem
+                                    {
+                                        Value = h.Id.ToString(),
+                                        Text = $"{h.Name}, {h.Address}"
+                                    })
+                                    .ToListAsync();
+                return this.View(model);
+            }
+
+
+            var hotelRoom = new HotelRoom
+            {
+                Hotel = hotel,
+                Room = room
+            };
+
+            await this.dbContext.HotelsRooms.AddAsync(hotelRoom);
+            await this.dbContext.SaveChangesAsync();
+
+            return this.RedirectToAction(nameof(Index));
+
+        }
 
     }
 }
