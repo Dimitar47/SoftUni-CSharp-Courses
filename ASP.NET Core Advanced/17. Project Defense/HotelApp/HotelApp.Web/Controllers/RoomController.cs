@@ -452,6 +452,90 @@ namespace HotelApp.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Delete(string? id)
+        {
+            Guid roomGuid = Guid.Empty;
+            bool isGuidValid = this.IsGuidValid(id, ref roomGuid);
+
+            if (!isGuidValid)
+            {
+                return this.RedirectToAction(nameof(Index));
+            }
+
+
+            Room? room = await dbContext.Rooms
+                               .Where(r => !r.IsDeleted)
+                               .Include(r => r.RoomType)
+                               .Include(r => r.RoomHotels.Where(rh => !rh.IsDeleted))
+                               .ThenInclude(rh => rh.Hotel)
+                               .FirstOrDefaultAsync(r => r.Id == roomGuid);
+
+            if (room == null)
+            {
+                return this.RedirectToAction(nameof(Index));
+            }
+
+            var hotelRoom = room.RoomHotels.Where(rh => rh.IsDeleted == false).FirstOrDefault();
+
+            var viewModel = new RoomDeleteViewModel
+            {
+                RoomId = room.Id.ToString(),
+                RoomNumber = room.RoomNumber,
+                RoomStatus = room.Status,
+                RoomTypeName = room.RoomType.Name,
+                IsAssociated = hotelRoom != null,
+                HotelName = hotelRoom?.Hotel?.Name,
+                HotelAddress = hotelRoom?.Hotel?.Address
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(string? id)
+        {
+            Guid roomGuid = Guid.Empty;
+            bool isGuidValid = this.IsGuidValid(id, ref roomGuid);
+
+            if (!isGuidValid)
+            {
+
+                return this.RedirectToAction(nameof(Index));
+            }
+
+            Room? room = await dbContext.Rooms
+                                .Where(r => r.IsDeleted == false)
+                                .Include(r => r.RoomType)
+                                .Include(r => r.RoomHotels.Where(rh => !rh.IsDeleted))
+                                .ThenInclude(rh => rh.Hotel)
+                                .FirstOrDefaultAsync(r => r.Id == roomGuid);
+
+
+            if (room == null)
+            {
+                return this.RedirectToAction(nameof(Index));
+            }
+
+
+            var hotelRoom = room.RoomHotels.Where(rh => rh.IsDeleted == false).FirstOrDefault();
+            if (hotelRoom != null)
+            {
+                hotelRoom.IsDeleted = true;
+
+
+            }
+
+            room.IsDeleted = true;
+
+
+
+            await dbContext.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
 
 
     }
