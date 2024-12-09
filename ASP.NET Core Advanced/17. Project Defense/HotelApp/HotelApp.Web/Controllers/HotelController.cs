@@ -9,6 +9,8 @@ using static HotelApp.Common.EntityValidationConstants.Hotel;
 
 using Microsoft.AspNetCore.Mvc.Rendering;
 using HotelApp.Web.ViewModels.Room;
+
+
 namespace HotelApp.Web.Controllers
 {
     public class HotelController : BaseController
@@ -92,7 +94,6 @@ namespace HotelApp.Web.Controllers
 
             return this.RedirectToAction(nameof(Index));
         }
-
 
         [HttpGet]
         public async Task<IActionResult> Details(string? id)
@@ -260,7 +261,6 @@ namespace HotelApp.Web.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]

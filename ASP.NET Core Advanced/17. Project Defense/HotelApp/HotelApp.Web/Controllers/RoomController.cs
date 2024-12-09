@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
+
+
 namespace HotelApp.Web.Controllers
 {
     public class RoomController : BaseController
@@ -64,8 +66,6 @@ namespace HotelApp.Web.Controllers
             return this.View(rooms);
         }
 
-
-      
         [HttpGet]
         public async Task<IActionResult> Create()
         {
@@ -201,7 +201,6 @@ namespace HotelApp.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-
         [HttpGet]
         public async Task<IActionResult> Details(string? id)
         {
@@ -320,8 +319,6 @@ namespace HotelApp.Web.Controllers
             return View(model);
         }
 
-
-        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(EditRoomFormModel model)
@@ -577,7 +574,6 @@ namespace HotelApp.Web.Controllers
             return this.View(viewModel);
         }
 
-
         [HttpPost]
         public async Task<IActionResult> AddToHotel(AddRoomToHotelInputModel model)
         {
@@ -665,6 +661,8 @@ namespace HotelApp.Web.Controllers
             return this.RedirectToAction(nameof(Index));
 
         }
+
+
 
     }
 }

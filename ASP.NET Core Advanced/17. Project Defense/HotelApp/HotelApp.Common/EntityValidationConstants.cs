@@ -39,6 +39,7 @@ namespace HotelApp.Common
             //Booking
             public const decimal BookingTotalPriceMinLength = 0;
             public const decimal BookingTotalPriceMaxLength = decimal.MaxValue;
+            public const string CheckInOutDateFormat = "yyyy-MM-dd";
         }
 
         public static class Guest

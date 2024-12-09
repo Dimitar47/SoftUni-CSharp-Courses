@@ -1,0 +1,43 @@
+﻿@using HotelApp.Web.ViewModels.Booking
+@model IEnumerable<BookingIndexViewModel>
+@using static HotelApp.Common.EntityValidationConstants.Hotel
+
+@{
+    ViewData["Title"] = "All Bookings";
+}
+
+<h1>Bookings</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Guest</th>
+            <th>Hotel</th>
+            <th>Room Type</th>
+            <th>Room Number</th>
+            <th>Check-in Date</th>
+            <th>Check-out Date</th>
+            <th>Total Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@booking.GuestName</td>
+                <td>@booking.HotelName</td>
+                <td>@booking.RoomType</td>
+                <td>@booking.RoomNumber</td>
+                <td>@booking.CheckinDate</td>
+                <td>@booking.CheckoutDate</td>
+                <td>@booking.TotalPrice</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@booking.Id" class="btn btn-info btn-sm">Details</a>
+                    <a asp-action="Edit" asp-route-id="@booking.Id" class="btn btn-primary btn-sm">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@booking.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
