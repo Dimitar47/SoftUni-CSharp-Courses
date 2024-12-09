@@ -1,0 +1,55 @@
+﻿@using HotelApp.Web.ViewModels.Room
+@model EditRoomFormModel
+
+@{
+    ViewData["Title"] = "Edit Room";
+}
+
+<h2>Edit Room</h2>
+
+<form asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="RoomId" />
+
+    <div class="form-group">
+        <label asp-for="RoomNumber" class="control-label"></label>
+        <input asp-for="RoomNumber" class="form-control" />
+        <span asp-validation-for="RoomNumber" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ImageURL" class="control-label"></label>
+        <input asp-for="ImageURL" class="form-control" />
+        <span asp-validation-for="ImageURL" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Status" class="control-label"></label>
+        <select asp-for="Status" class="form-control" asp-items="Model.StatusOptions"></select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="HotelId" class="control-label"></label>
+        <select asp-for="HotelId" class="form-control" asp-items="Model.Hotels">
+            <option value="">Unassociated</option>
+        </select>
+        <span asp-validation-for="HotelId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RoomTypeId" class="control-label"></label>
+        <select asp-for="RoomTypeId" class="form-control" asp-items="Model.RoomTypes"></select>
+        <span asp-validation-for="RoomTypeId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+        <a asp-action="Index" class="btn btn-secondary ml-2">Back to List</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

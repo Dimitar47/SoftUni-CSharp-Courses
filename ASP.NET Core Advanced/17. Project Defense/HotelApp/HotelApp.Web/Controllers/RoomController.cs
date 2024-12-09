@@ -255,6 +255,203 @@ namespace HotelApp.Web.Controllers
 
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Edit(string? id)
+        {
+            Guid roomGuid = Guid.Empty;
+            bool isGuidValid = this.IsGuidValid(id, ref roomGuid);
+
+            if (!isGuidValid)
+            {
+                // Invalid id format
+                return this.RedirectToAction(nameof(Index));
+            }
+
+            var room = await dbContext.Rooms
+                                       .Where(r => !r.IsDeleted)
+                                       .Include(r => r.RoomType)
+                                       .Include(r => r.RoomHotels)
+                                       .ThenInclude(rh => rh.Hotel)
+                                       .FirstOrDefaultAsync(r => r.Id == roomGuid);
+
+            if (room == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            var hotelsList = await dbContext.Hotels.Where(h => h.IsDeleted == false)
+                                            .Select(h => new SelectListItem
+                                            {
+                                                Value = h.Id.ToString(),
+                                                Text = $"{h.Name} - {h.Address}"
+                                            })
+                                             .ToListAsync();
+
+            var roomTypes = dbContext.RoomTypes
+                                     .Select(rt => new SelectListItem
+                                     {
+                                         Value = rt.Id.ToString(),
+                                         Text = rt.Name
+                                     })
+                                      .AsEnumerable()
+                                     .DistinctBy(rt => rt.Text)
+                                     .ToList();
+
+            var statusOptions = new List<SelectListItem>
+            {
+                new SelectListItem { Value = "Available", Text = "Available" },
+                new SelectListItem { Value = "Occupied", Text = "Occupied" },
+                new SelectListItem { Value = "Cleaning", Text = "Cleaning" }
+            };
+            var model = new EditRoomFormModel
+            {
+                RoomId = room.Id.ToString(),
+                RoomNumber = room.RoomNumber,
+                Status = room.Status,
+                ImageURL = room.ImageURL,
+                RoomTypeId = room.RoomTypeId,
+                HotelId = room.RoomHotels.FirstOrDefault(rh => rh.IsDeleted == false)?.HotelId,
+                Hotels = hotelsList,
+                RoomTypes = roomTypes,
+                StatusOptions = statusOptions
+
+            };
+
+            return View(model);
+        }
+
+
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(EditRoomFormModel model)
+        {
+            Guid roomGuid = Guid.Empty;
+            bool isGuidValid = this.IsGuidValid(model.RoomId, ref roomGuid);
+
+            if (!isGuidValid)
+            {
+                // Invalid id format
+                return this.RedirectToAction(nameof(Index));
+            }
+
+
+            var hotelsList = await dbContext.Hotels.Where(h => h.IsDeleted == false)
+                .Select(h => new SelectListItem
+                {
+                    Value = h.Id.ToString(),
+                    Text = $"{h.Name} - {h.Address}"
+                })
+                .ToListAsync();
+
+            var roomTypes = dbContext.RoomTypes
+                .Select(rt => new SelectListItem
+                {
+                    Value = rt.Id.ToString(),
+                    Text = rt.Name
+                })
+                .AsEnumerable()
+                .DistinctBy(rt => rt.Text)
+                .ToList();
+
+            var statusOptions = new List<SelectListItem>
+            {
+                new SelectListItem { Value = "Available", Text = "Available" },
+                new SelectListItem { Value = "Occupied", Text = "Occupied" },
+                new SelectListItem { Value = "Cleaning", Text = "Cleaning" }
+            };
+
+            if (!ModelState.IsValid)
+            {
+                model.Hotels = hotelsList;
+                model.RoomTypes = roomTypes;
+                model.StatusOptions = statusOptions;
+                return View(model);
+            }
+
+            // Check if the room number exists in the selected hotel
+            if (model.HotelId.HasValue)
+            {
+                var roomExistsInHotel = await dbContext.HotelsRooms.Where(hr => hr.IsDeleted == false &&
+                        hr.Hotel.IsDeleted == false && hr.Room.IsDeleted == false)
+                    .AnyAsync(hr =>
+                        hr.HotelId == model.HotelId &&
+                        hr.Room.RoomNumber == model.RoomNumber &&
+                        hr.RoomId != roomGuid); // Exclude the current room being edited
+
+                if (roomExistsInHotel)
+                {
+                    ModelState.AddModelError("RoomNumber", "This room number already exists in the selected hotel.");
+                    model.Hotels = hotelsList;
+                    model.RoomTypes = roomTypes;
+                    model.StatusOptions = statusOptions;
+                    return View(model);
+                }
+            }
+            else
+            {
+                var unassociatedRoomExists = await dbContext.Rooms
+                                                            .Where(r => !r.IsDeleted && !r.RoomHotels.Any(rh => !rh.IsDeleted &&
+                                                            !rh.Hotel.IsDeleted))
+                                                            .AnyAsync(r => r.RoomNumber == model.RoomNumber && r.Id != roomGuid);
+
+
+                if (unassociatedRoomExists)
+                {
+                    ModelState.AddModelError("RoomNumber", "An unassociated room with this room number already exists.");
+                    model.Hotels = hotelsList;
+                    model.RoomTypes = roomTypes;
+                    model.StatusOptions = statusOptions;
+                    return View(model);
+                }
+            }
+
+
+            var room = await dbContext.Rooms
+                                        .Where(r => !r.IsDeleted)
+                                        .Include(r => r.RoomType)
+                                        .Include(r => r.RoomHotels)
+                                        .FirstOrDefaultAsync(r => r.Id == roomGuid);
+
+            if (room == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+
+            room.RoomNumber = model.RoomNumber;
+            room.Status = model.Status;
+            room.ImageURL = model.ImageURL;
+            room.RoomTypeId = model.RoomTypeId;
+
+            // Update hotel association
+            var existingHotelRoom = room.RoomHotels.Where(rh => rh.IsDeleted == false).FirstOrDefault();
+
+            if (model.HotelId.HasValue)
+            {
+                if (existingHotelRoom != null)
+                {
+                    existingHotelRoom.HotelId = model.HotelId.Value; // Update association
+                }
+                else
+                {
+                    var newHotelRoom = new HotelRoom
+                    {
+                        RoomId = room.Id,
+                        HotelId = model.HotelId.Value
+                    };
+                    await dbContext.HotelsRooms.AddAsync(newHotelRoom);
+                }
+            }
+            else if (existingHotelRoom != null)
+            {
+                existingHotelRoom.IsDeleted = true; // Soft delete association
+            }
+
+            await dbContext.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
 
 
     }
