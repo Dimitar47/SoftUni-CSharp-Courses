@@ -1,35 +1,34 @@
 
 
-```markdown
 # HotelApp 🏨
 
-**HotelApp** is a web-based hotel management system built with **ASP.NET Core MVC**. It allows users to manage **bookings**, **rooms**, and **customers** efficiently with a **clean architecture structure**.
+HotelApp is a web-based hotel management system built with ASP.NET Core MVC. It allows users to manage bookings, rooms, and customers efficiently with a clean architecture structure.
 
 ## 📁 Project Structure
 
 - **HotelApp.Common**  
-  **Shared utilities, constants, and helper methods used across the application.**
+  Shared utilities, constants, and helper methods used across the application.
 
 - **HotelApp.Data.Models**  
-  **Entity models representing the database schema.**
+  Entity models representing the database schema.
 
 - **HotelApp.Data**  
-  **Database context, repositories, and data access logic.**
+  Database context, repositories, and data access logic.
 
 - **HotelApp.Web.Infrastructure**  
-  **Custom middleware, filters, and other web-specific utilities.**
+  Custom middleware, filters, and other web-specific utilities.
 
 - **HotelApp.Web.ViewModels**  
-  **View models used to transfer data between views and controllers.**
+  View models used to transfer data between views and controllers.
 
 - **HotelApp.Web**  
-  **Main web application using ASP.NET Core MVC.**
+  Main web application using ASP.NET Core MVC.
 
 - **00.Course Introduction-Project-Assignment-Retake.docx**  
-  **Documentation or instructions related to the course or assignment.**
+  Documentation or instructions related to the course or assignment.
 
 - **HotelApp.sln**  
-  **Visual Studio solution file for the whole project.**
+  Visual Studio solution file for the whole project.
 
 ## 🚀 Getting Started
 
