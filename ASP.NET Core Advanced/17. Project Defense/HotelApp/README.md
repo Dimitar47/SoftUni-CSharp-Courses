@@ -1,5 +1,3 @@
-
-
 # HotelApp 🏨
 
 HotelApp is a web-based hotel management system built with ASP.NET Core MVC. It allows users to manage bookings, rooms, and customers efficiently with a clean architecture structure.
@@ -28,29 +26,41 @@ HotelApp is a web-based hotel management system built with ASP.NET Core MVC. It 
 
 To run the project locally:
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/HotelApp.git
-   ```
-2. **Open the solution file (`HotelApp.sln`) in Visual Studio.**
+- **Clone the repository:**
+  ```bash
+  git clone https://github.com/Dimitar47/SoftUni-CSharp-Courses.git
+  ```
 
-3. **Build the solution to restore NuGet packages and resolve dependencies.**
+- **Navigate to the project folder:**
+  ```bash
+  cd SoftUni-CSharp-Courses\ASP.NET Core Advanced\17. Project Defense\HotelApp
+  ```
 
-4. **Set `HotelApp.Web` as the startup project.**
+- **List the files in the directory:**
+  ```bash
+  dir
+  ```
 
-5. **Run the project using Visual Studio (`F5` or the Run button).**
+- **Open the solution file (`HotelApp.sln`) in Visual Studio.** 🖥️
 
-## Technologies Used
-   - ASP.NET Core MVC  
-   - Entity Framework Core  
-   - C#  
-   - SQL Server  
+- **Build the solution to restore NuGet packages and resolve dependencies.** 🔧
 
-## Contributing  
-   Pull requests are welcome.  
-   For major changes, please open an issue first to discuss what you would like to change.
+- **Set `HotelApp.Web` as the startup project.** 🚀
 
-## License
-   This project is licensed under the MIT License.
-```
+- **Run the project using Visual Studio (`F5` or the Run button).** ▶️
 
+## 🔧 Technologies Used
+
+- ASP.NET Core MVC  
+- Entity Framework Core  
+- C#  
+- SQL Server  
+
+## 🤝 Contributing
+
+Pull requests are welcome.  
+For major changes, please open an issue first to discuss what you would like to change.
+
+## 📝 License
+
+This project is licensed under the MIT License.
