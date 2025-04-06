@@ -40,17 +40,17 @@ To run the project locally:
 
 5. **Run the project using Visual Studio (`F5` or the Run button).**
 
-6. **Technologies Used**
+## Technologies Used
    - ASP.NET Core MVC  
    - Entity Framework Core  
    - C#  
    - SQL Server  
 
-7. **Contributing**  
+## Contributing  
    Pull requests are welcome.  
    For major changes, please open an issue first to discuss what you would like to change.
 
-8. **License**  
+## License
    This project is licensed under the MIT License.
 ```
 
