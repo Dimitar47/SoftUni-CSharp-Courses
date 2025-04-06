@@ -24,12 +24,6 @@ HotelApp is a web-based hotel management system built with ASP.NET Core MVC. It 
 - **HotelApp.Web**  
   Main web application using ASP.NET Core MVC.
 
-- **00.Course Introduction-Project-Assignment-Retake.docx**  
-  Documentation or instructions related to the course or assignment.
-
-- **HotelApp.sln**  
-  Visual Studio solution file for the whole project.
-
 ## 🚀 Getting Started
 
 To run the project locally:
