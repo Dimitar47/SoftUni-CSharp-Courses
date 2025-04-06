@@ -1,0 +1,53 @@
+﻿@model ProductDetailsViewModel
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3" style="margin-top: 20px;">
+    <h2>@ViewData["Title"]</h2>
+</div>
+<hr />
+
+<div class="row justify-content-center" style="margin: 0 auto; max-width: 800px;">
+    <div class="col-md-4 text-center">
+        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+        {
+            <img src="@Model.ImageUrl" class="img-fluid" style="max-width: 100%; height: auto;" alt="@Model.ProductName" />
+        }
+        else
+        {
+            <img src="~/img/no-image-available-02.jpg" class="img-fluid" style="max-width: 100%; height: auto;" alt="No Image Available" />
+        }
+    </div>
+
+    <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title">@Model.ProductName</h5>
+            <hr />
+            <h6 class="card-subtitle mb-2 text-muted">@Model.Price.ToString("C")</h6>
+            <hr />
+            <p class="card-text">@Model.Description</p>
+            <hr />
+            <p class="card-text"><small class="text-muted">Category: @Model.CategoryName</small></p>
+            <p class="card-text"><small class="text-muted">Added On: @Model.AddedOn / Seller: @Model.Seller</small></p>
+            <hr />            
+        </div>
+        <div class="card-footer text-center">
+            <div class="d-flex justify-content-between align-items-center">
+                <a asp-controller="Product" asp-action="Index" class="btn btn-warning d-flex justify-content-center align-items-center flex-fill mx-1">Back</a>
+                @if (User?.Identity?.IsAuthenticated == true && User?.Identity?.Name != @Model.Seller && !@Model.HasBought)
+                {
+                    <form asp-controller="Product" asp-action="AddToCart" method="post" class="d-flex justify-content-center align-items-center flex-fill mx-1">
+                        <input type="hidden" name="id" value="@Model.Id" />
+                        <button type="submit" class="btn btn-success w-100">Buy</button>
+                    </form>
+                }
+                @if (User?.Identity?.Name == @Model.Seller)
+                {
+                    <a asp-controller="Product" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary d-flex justify-content-center align-items-center flex-fill mx-1">Edit</a>
+                    <a asp-controller="Product" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger d-flex justify-content-center align-items-center flex-fill mx-1" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
+                }
+            </div>
+        </div>
+    </div>
+</div>

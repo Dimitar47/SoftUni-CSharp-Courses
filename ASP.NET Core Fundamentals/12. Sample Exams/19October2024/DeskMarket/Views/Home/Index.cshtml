@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    #carouselExampleIndicators .carousel-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carousel-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+</style>
+
+<div class="text-center">
+    <h2 class="display-4">Upgrade Your Workspace</h2>
+    <p><a href="https://softuni.bg/trainings/4707/asp-net-fundamentals-september-2024">Discover the latest in high-performance peripherals and gear</a></p>
+    <div class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/img/carousel/9S7-158314-066_6_Supersize.jpg" class="d-block mx-auto" style="max-width: 400px; height: auto;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/carousel/dell-snp-gaming-cat-all-gaming-accessories-aw620m-aw920k-aw720h-800x620-right.jpg" class="d-block mx-auto" style="max-width: 400px; height: auto;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/carousel/Z4-G4-I7.jpg" class="d-block mx-auto" style="max-width: 400px; height: auto;" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>

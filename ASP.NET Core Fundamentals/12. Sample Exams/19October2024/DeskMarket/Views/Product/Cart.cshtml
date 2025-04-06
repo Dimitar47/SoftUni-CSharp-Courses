@@ -1,0 +1,37 @@
+﻿@model List<CartViewModel>
+@{
+    ViewData["Title"] = "Cart";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3" style="margin-top: 20px;">
+    <h2>@ViewData["Title"]</h2>
+</div>
+<hr />
+
+@foreach (var product in Model)
+{
+    <div class="row align-items-center mb-4 py-3" style="border-bottom: 1px solid #ccc;">
+        <div class="col-md-2 text-center">
+            @if (!string.IsNullOrEmpty(product.ImageUrl))
+            {
+                <img src="@product.ImageUrl" class="img-fluid" style="max-height: 100px; object-fit: contain;" alt="@product.ProductName" />
+            }
+            else
+            {
+                <img src="~/img/no-image-available-02.jpg" class="img-fluid" style="max-height: 100px; object-fit: contain;" alt="No Image Available" />
+            }
+        </div>
+        <div class="col-md-4 text-start">
+            <h5 class="mb-0">@product.ProductName</h5>
+        </div>
+        <div class="col-md-2 text-start">
+            <h5 class="mb-0">@product.Price.ToString("C", System.Globalization.CultureInfo.CreateSpecificCulture("fr-FR"))</h5>
+        </div>
+        <div class="col-md-4 text-end">
+            <form asp-controller="Product" asp-action="RemoveFromCart" asp-route-id="@product.Id" method="post" style="display:inline;">
+                <button type="submit" class="btn btn-danger">Remove from Cart</button>
+            </form>
+        </div>
+
+    </div>
+} 

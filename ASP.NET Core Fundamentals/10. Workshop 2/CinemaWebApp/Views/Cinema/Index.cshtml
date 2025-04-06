@@ -1,0 +1,22 @@
+﻿@model IEnumerable<CinemaWebApp.ViewModels.CinemaIndexViewModel>
+
+<h2>Cinemas</h2>
+
+<!-- Button to add a new cinema -->
+<a asp-action="Create" class="btn btn-success mb-4">Add New Cinema</a>
+
+<div class="row">
+    @foreach (var cinema in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="~/images/my-cinema.jpg" class="card-img-top" alt="Cinema Image" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">@cinema.Name</h5>
+                    <p class="card-text">@cinema.Location</p>
+                    <a asp-action="Details" asp-route-id="@cinema.Id" class="btn btn-primary">View Movie Program</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

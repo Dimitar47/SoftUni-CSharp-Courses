@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DeskMarket</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DeskMarket.styles.css" asp-append-version="true" />
+    <link rel="icon" href="~/img/icon.jpg" type="image/x-icon" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                @if(User?.Identity?.IsAuthenticated ?? false)
+                {
+                    <a class="navbar-brand" asp-controller="Product" asp-action="Index">
+                        DeskMarket
+                        <span class="visually-hidden">(current)</span>
+                    </a>
+                }
+                else
+                {
+                    <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                        DeskMarket
+                        <span class="visually-hidden">(current)</span>
+                    </a>
+                }
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            @if (User?.Identity?.IsAuthenticated ?? false)
+                            {
+                                <a class="nav-link active" asp-controller="Product" asp-action="Index">
+                                    Home
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            }
+                            else
+                            {
+                                <a class="nav-link active" asp-controller="Home" asp-action="Index">
+                                    Home
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            }
+                        </li>
+                        @if (User?.Identity?.IsAuthenticated ?? false)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-controller="Product" asp-action="Index">Product List</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" asp-controller="Product" asp-action="Add">Add Product</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Product" asp-action="Cart">Cart</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-controller="Product" asp-action="Index">Product List</a>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container flex-grow-1">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted mt-auto">
+        <div class="container">
+            &copy; @{
+                var currentYear = DateTime.Now.Year;
+                if (currentYear == 2024)
+                {
+                    @currentYear
+                }
+                else
+                {
+                    @:2024 - @(DateTime.Now.Year)
+                }
+            } - DeskMarket
+        </div>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

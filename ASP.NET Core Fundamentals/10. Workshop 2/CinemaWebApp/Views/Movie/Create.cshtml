@@ -1,0 +1,44 @@
+﻿@using CinemaWebApp.ViewModels
+@model MovieViewModel
+
+<h2>Add a New Movie</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label for="Title">Movie Name</label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div>
+        <label for="Genre">Genre</label>
+        <input asp-for="Genre" class="form-control" />
+        <span asp-validation-for="Genre" class="text-danger"></span>
+    </div>
+    <div>
+        <label for="ReleaseDate">Release Date</label>
+        <input asp-for="ReleaseDate" type="month" class="form-control" value="@DateTime.Now.ToString("yyyy-MM")" />
+        <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+    </div>
+    <div>
+        <label for="Duration">Duration (minutes)</label>
+        <input asp-for="Duration" class="form-control" />
+        <span asp-validation-for="Duration" class="text-danger"></span>
+    </div>
+    <div>
+        <label for="Director">Director</label>
+        <input asp-for="Director" class="form-control" />
+        <span asp-validation-for="Director" class="text-danger"></span>
+    </div>
+    <div>
+        <label for="Description">Description</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+    <div>
+        <label for="ImageUrl">Image URL</label>
+        <input asp-for="ImageUrl" class="form-control" placeholder="Enter Image URL" />
+        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Create Movie</button>
+</form>
+
+<a asp-action="Index">Back to Movies List</a>

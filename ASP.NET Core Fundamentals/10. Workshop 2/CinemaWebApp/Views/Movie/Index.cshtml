@@ -1,0 +1,40 @@
+﻿@model IEnumerable<CinemaWebApp.Models.Movie>
+
+<h2>All Movies</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Release Date</th>
+            <th>Duration</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>@movie.Title</td>
+                <td>@movie.Genre</td>
+                <td>@movie.ReleaseDate.ToString("MMMM yyyy")</td>
+                <td>@movie.Duration minutes</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@movie.Id" class="btn btn-info">Details</a>
+                    <a asp-action="AddToProgram" asp-route-movieId="@movie.Id" class="btn btn-primary">+Program</a>
+
+                    @if (User?.Identity?.IsAuthenticated ?? false) // show only if user is logged in
+                    {
+                        <form asp-controller="Watchlist" asp-action="AddToWatchlist" method="post" class="d-inline">
+                            <input type="hidden" name="movieId" value="@movie.Id" />
+                            <button type="submit" class="btn btn-warning">+Watchlist</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Add New Movie</a>

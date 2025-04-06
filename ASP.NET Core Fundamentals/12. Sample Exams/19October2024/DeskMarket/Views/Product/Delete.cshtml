@@ -1,0 +1,31 @@
+﻿@model DeleteViewModel
+@{
+    ViewData["Title"] = "Delete Product";
+    var today = DateTime.Now.ToString("dd-MM-yyyy");
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3" style="margin-top: 20px;">
+    <h2>@ViewData["Title"]</h2>
+</div>
+<hr />
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title text-center">@Model.ProductName</h3>
+                <p class="mb-0"><strong>Added By:</strong> @Model.Seller</p>
+                <p class="text-danger mt-3">Are you sure you want to delete @(Model.ProductName)?</p>
+            </div>
+            <div class="card-footer">
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="hidden" asp-for="ProductName" />
+                    <input type="hidden" asp-for="SellerId" />
+                    <button type="submit" class="btn btn-danger">Confirm Delete</button>
+                    <a asp-controller="Product" asp-action="Details" asp-route-id="@Model.Id" class="btn btn-warning">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
