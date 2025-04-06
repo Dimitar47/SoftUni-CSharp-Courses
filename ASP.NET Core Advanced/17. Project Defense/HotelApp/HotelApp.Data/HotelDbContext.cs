@@ -137,7 +137,7 @@ namespace HotelApp.Data
             {
                 
                 RoomNumber = 102,
-                Status = "Occupied",
+                Status = "Available",
                 ImageURL = "/images/room2.png",
                 RoomTypeId = singleRoomType.Id
             };
@@ -146,7 +146,7 @@ namespace HotelApp.Data
             {
            
                 RoomNumber = 201,
-                Status = "Cleaning",
+                Status = "Available",
                 RoomTypeId = doubleRoomType.Id
             };
 

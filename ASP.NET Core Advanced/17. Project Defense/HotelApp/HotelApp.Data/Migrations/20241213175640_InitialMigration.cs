@@ -206,8 +206,8 @@ namespace HotelApp.Web.Data.Migrations
                 columns: new[] { "Id", "Address", "DateOfBirth", "Email", "FirstName", "LastName", "Phone" },
                 values: new object[,]
                 {
-                    { new Guid("7d834c10-8d45-432a-8497-5fe67d6bc87e"), "321 Birch Ln, Seaview, Country", new DateTime(1995, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "michaelwilliams@example.com", "Michael", "Williams", "+2233445566" },
-                    { new Guid("cc8884c8-5fef-422f-a040-bb241d56bae1"), "789 Pine St, Hilltown, Country", new DateTime(1982, 11, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "alicejohnson@example.com", "Alice", "Johnson", "+1122334455" }
+                    { new Guid("4ca39a7b-8351-4348-8ece-f836ebcf0fcc"), "321 Birch Ln, Seaview, Country", new DateTime(1995, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "michaelwilliams@example.com", "Michael", "Williams", "+2233445566" },
+                    { new Guid("fae9ecb7-b323-476b-9e97-0a6caca0cf9c"), "789 Pine St, Hilltown, Country", new DateTime(1982, 11, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "alicejohnson@example.com", "Alice", "Johnson", "+1122334455" }
                 });
 
             migrationBuilder.InsertData(
@@ -215,9 +215,9 @@ namespace HotelApp.Web.Data.Migrations
                 columns: new[] { "Id", "Address", "CheckinTime", "CheckoutTime", "Email", "ImageURL", "Name", "Phone", "Stars" },
                 values: new object[,]
                 {
-                    { new Guid("59e30f3b-29c6-4c66-92d2-55cfb73a8507"), "456 Beachside Blvd, Seaside Town, Country", new TimeSpan(0, 15, 0, 0, 0), new TimeSpan(0, 12, 0, 0, 0), "info@oceanviewresort.com", "/images/hotel3.jpg", "Oceanview Resort", "+9876543210", 4 },
-                    { new Guid("f08fee76-9236-4352-bad0-79114d2f4fa8"), "123 Main St, Cityville, Country", new TimeSpan(0, 14, 0, 0, 0), new TimeSpan(0, 11, 0, 0, 0), "contact@grandhotel.com", "/images/hotel1.jpg", "Grand Hotel", "+1234567890", 5 },
-                    { new Guid("f5a9f365-2487-4da9-930f-5ed74548b19c"), "456 Ocean Ave, Seaside, Country", new TimeSpan(0, 15, 0, 0, 0), new TimeSpan(0, 10, 0, 0, 0), "info@beachresort.com", null, "Beachside Resort", "+0987654321", 4 }
+                    { new Guid("89f99082-15da-4328-98c6-9f6d90c08506"), "456 Beachside Blvd, Seaside Town, Country", new TimeSpan(0, 15, 0, 0, 0), new TimeSpan(0, 12, 0, 0, 0), "info@oceanviewresort.com", "/images/hotel3.jpg", "Oceanview Resort", "+9876543210", 4 },
+                    { new Guid("b2752b87-da7b-4b9c-b4de-ac83558526a6"), "123 Main St, Cityville, Country", new TimeSpan(0, 14, 0, 0, 0), new TimeSpan(0, 11, 0, 0, 0), "contact@grandhotel.com", "/images/hotel1.jpg", "Grand Hotel", "+1234567890", 5 },
+                    { new Guid("f2076ab0-6c3f-4107-a486-69493c927ad7"), "456 Ocean Ave, Seaside, Country", new TimeSpan(0, 15, 0, 0, 0), new TimeSpan(0, 10, 0, 0, 0), "info@beachresort.com", null, "Beachside Resort", "+0987654321", 4 }
                 });
 
             migrationBuilder.InsertData(
@@ -225,10 +225,10 @@ namespace HotelApp.Web.Data.Migrations
                 columns: new[] { "Id", "Capacity", "Description", "Name", "PricePerNight" },
                 values: new object[,]
                 {
-                    { new Guid("7595a22c-4f20-446e-9ff1-2dd858e0605e"), 2, "A double room for two guests.", "Double", 150.00m },
-                    { new Guid("7dc23acb-fd86-4d55-a6e7-7c9038fc79a2"), 4, null, "Suite", 200.00m },
-                    { new Guid("9374aedb-6b96-442e-9dc4-8151cf392ec4"), 1, "A single room for solo travelers.", "Single", 100.00m },
-                    { new Guid("d2fd4ec4-8c74-41bc-bb23-a0fab80001e9"), 4, "A suite with multiple rooms and luxurious amenities.", "Suite", 200.00m }
+                    { new Guid("32ae3e42-270e-4c36-95ac-9efe748bd614"), 1, "A single room for solo travelers.", "Single", 100.00m },
+                    { new Guid("37f1d7e0-ceb4-4704-8c53-ece9ec44b122"), 4, "A suite with multiple rooms and luxurious amenities.", "Suite", 200.00m },
+                    { new Guid("98e23296-f423-42e3-9606-d8286e79bc54"), 2, "A double room for two guests.", "Double", 150.00m },
+                    { new Guid("aec34658-7edc-4935-aa06-34869660e905"), 4, null, "Suite", 200.00m }
                 });
 
             migrationBuilder.InsertData(
@@ -236,11 +236,11 @@ namespace HotelApp.Web.Data.Migrations
                 columns: new[] { "Id", "ImageURL", "RoomNumber", "RoomTypeId", "Status" },
                 values: new object[,]
                 {
-                    { new Guid("2089920b-f804-4902-9378-7b5edbd8de2d"), null, 201, new Guid("7595a22c-4f20-446e-9ff1-2dd858e0605e"), "Cleaning" },
-                    { new Guid("49f761a2-b413-4b54-96d0-b430e77f81a5"), "/images/room2.png", 102, new Guid("9374aedb-6b96-442e-9dc4-8151cf392ec4"), "Occupied" },
-                    { new Guid("7de86043-69be-405f-848d-3ea837e045e5"), null, 301, new Guid("7595a22c-4f20-446e-9ff1-2dd858e0605e"), "Available" },
-                    { new Guid("902e52bf-cc0d-44c8-9868-cd315d5b07c9"), null, 202, new Guid("7595a22c-4f20-446e-9ff1-2dd858e0605e"), "Available" },
-                    { new Guid("c9a182e8-3a44-4801-9b00-b12e61483dbc"), "/images/room1.png", 101, new Guid("9374aedb-6b96-442e-9dc4-8151cf392ec4"), "Available" }
+                    { new Guid("4c0ae8b9-1bd0-4571-8341-a2efc4c8c586"), "/images/room2.png", 102, new Guid("32ae3e42-270e-4c36-95ac-9efe748bd614"), "Available" },
+                    { new Guid("8272e2c2-3f52-47b9-bb8d-0d328a338ef9"), null, 201, new Guid("98e23296-f423-42e3-9606-d8286e79bc54"), "Available" },
+                    { new Guid("9fd1e1ee-6fae-4d51-a637-fcf24e1ede82"), null, 301, new Guid("98e23296-f423-42e3-9606-d8286e79bc54"), "Available" },
+                    { new Guid("a323b2bd-a53e-4e90-b686-1d3f09953ba7"), "/images/room1.png", 101, new Guid("32ae3e42-270e-4c36-95ac-9efe748bd614"), "Available" },
+                    { new Guid("a65a0b07-2385-4f19-9737-716677ead8d2"), null, 202, new Guid("98e23296-f423-42e3-9606-d8286e79bc54"), "Available" }
                 });
 
             migrationBuilder.InsertData(
@@ -248,8 +248,8 @@ namespace HotelApp.Web.Data.Migrations
                 columns: new[] { "Id", "DateOfBirth", "Email", "FirstName", "HireDate", "HotelId", "LastName", "Phone", "Position", "Salary" },
                 values: new object[,]
                 {
-                    { new Guid("6d70ff14-bba9-4d51-ac4b-cb8bf9fa211c"), new DateTime(1985, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "john.doe@grandhotel.com", "John", new DateTime(2015, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new Guid("f08fee76-9236-4352-bad0-79114d2f4fa8"), "Doe", "+1234567890", "Manager", 5000.00m },
-                    { new Guid("f8778587-24d8-413e-9aeb-03b12560d6f7"), new DateTime(1990, 7, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), "jane.smith@beachresort.com", "Jane", new DateTime(2018, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new Guid("f5a9f365-2487-4da9-930f-5ed74548b19c"), "Smith", "+0987654321", "Receptionist", 2500.00m }
+                    { new Guid("4c9e04b1-6996-4190-8e8f-fd198515f19f"), new DateTime(1990, 7, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), "jane.smith@beachresort.com", "Jane", new DateTime(2018, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new Guid("f2076ab0-6c3f-4107-a486-69493c927ad7"), "Smith", "+0987654321", "Receptionist", 2500.00m },
+                    { new Guid("7069055e-ea25-4cda-84a4-b4ac6e992ac0"), new DateTime(1985, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "john.doe@grandhotel.com", "John", new DateTime(2015, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new Guid("b2752b87-da7b-4b9c-b4de-ac83558526a6"), "Doe", "+1234567890", "Manager", 5000.00m }
                 });
 
             migrationBuilder.InsertData(
@@ -257,8 +257,8 @@ namespace HotelApp.Web.Data.Migrations
                 columns: new[] { "Id", "CheckinDate", "CheckoutDate", "GuestId", "HotelId", "RoomId", "StaffId", "TotalPrice" },
                 values: new object[,]
                 {
-                    { new Guid("87d2cfb2-978a-443b-8ab3-3db1fe4eea95"), new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), new Guid("cc8884c8-5fef-422f-a040-bb241d56bae1"), new Guid("f08fee76-9236-4352-bad0-79114d2f4fa8"), new Guid("c9a182e8-3a44-4801-9b00-b12e61483dbc"), new Guid("6d70ff14-bba9-4d51-ac4b-cb8bf9fa211c"), 500.00m },
-                    { new Guid("f44a91ac-41ca-48f3-a2f8-9363b3ddbb19"), new DateTime(2024, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), new Guid("7d834c10-8d45-432a-8497-5fe67d6bc87e"), new Guid("f5a9f365-2487-4da9-930f-5ed74548b19c"), new Guid("2089920b-f804-4902-9378-7b5edbd8de2d"), new Guid("f8778587-24d8-413e-9aeb-03b12560d6f7"), 300.00m }
+                    { new Guid("6c559e1e-cf69-465d-98b4-46e2b1c26da0"), new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), new Guid("fae9ecb7-b323-476b-9e97-0a6caca0cf9c"), new Guid("b2752b87-da7b-4b9c-b4de-ac83558526a6"), new Guid("a323b2bd-a53e-4e90-b686-1d3f09953ba7"), new Guid("7069055e-ea25-4cda-84a4-b4ac6e992ac0"), 500.00m },
+                    { new Guid("f677d23e-2817-4172-bfa4-f65168d6223a"), new DateTime(2024, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 12, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), new Guid("4ca39a7b-8351-4348-8ece-f836ebcf0fcc"), new Guid("f2076ab0-6c3f-4107-a486-69493c927ad7"), new Guid("8272e2c2-3f52-47b9-bb8d-0d328a338ef9"), new Guid("4c9e04b1-6996-4190-8e8f-fd198515f19f"), 300.00m }
                 });
 
             migrationBuilder.InsertData(
@@ -266,10 +266,10 @@ namespace HotelApp.Web.Data.Migrations
                 columns: new[] { "HotelId", "RoomId" },
                 values: new object[,]
                 {
-                    { new Guid("f08fee76-9236-4352-bad0-79114d2f4fa8"), new Guid("49f761a2-b413-4b54-96d0-b430e77f81a5") },
-                    { new Guid("f08fee76-9236-4352-bad0-79114d2f4fa8"), new Guid("c9a182e8-3a44-4801-9b00-b12e61483dbc") },
-                    { new Guid("f5a9f365-2487-4da9-930f-5ed74548b19c"), new Guid("2089920b-f804-4902-9378-7b5edbd8de2d") },
-                    { new Guid("f5a9f365-2487-4da9-930f-5ed74548b19c"), new Guid("902e52bf-cc0d-44c8-9868-cd315d5b07c9") }
+                    { new Guid("b2752b87-da7b-4b9c-b4de-ac83558526a6"), new Guid("4c0ae8b9-1bd0-4571-8341-a2efc4c8c586") },
+                    { new Guid("b2752b87-da7b-4b9c-b4de-ac83558526a6"), new Guid("a323b2bd-a53e-4e90-b686-1d3f09953ba7") },
+                    { new Guid("f2076ab0-6c3f-4107-a486-69493c927ad7"), new Guid("8272e2c2-3f52-47b9-bb8d-0d328a338ef9") },
+                    { new Guid("f2076ab0-6c3f-4107-a486-69493c927ad7"), new Guid("a65a0b07-2385-4f19-9737-716677ead8d2") }
                 });
 
             migrationBuilder.InsertData(
@@ -277,8 +277,8 @@ namespace HotelApp.Web.Data.Migrations
                 columns: new[] { "Id", "Amount", "BookingId", "PaymentDate", "PaymentMethod" },
                 values: new object[,]
                 {
-                    { new Guid("740bb7e7-083f-4a08-8f6f-d645cfdb99b1"), 300.00m, new Guid("f44a91ac-41ca-48f3-a2f8-9363b3ddbb19"), new DateTime(2024, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "Cash" },
-                    { new Guid("8d87c9e4-4559-4e96-89a0-5052191d0014"), 500.00m, new Guid("87d2cfb2-978a-443b-8ab3-3db1fe4eea95"), new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Credit Card" }
+                    { new Guid("57008aa4-dd0f-4a11-9c73-4473799b0bee"), 300.00m, new Guid("f677d23e-2817-4172-bfa4-f65168d6223a"), new DateTime(2024, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "Cash" },
+                    { new Guid("74c8165a-ad92-4523-b081-3746d1ce23dc"), 500.00m, new Guid("6c559e1e-cf69-465d-98b4-46e2b1c26da0"), new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Credit Card" }
                 });
 
             migrationBuilder.CreateIndex(

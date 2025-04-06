@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HotelApp.Web.Data.Migrations
 {
     [DbContext(typeof(HotelDbContext))]
-    [Migration("20241202170012_InitialMigration")]
+    [Migration("20241213175640_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -75,24 +75,24 @@ namespace HotelApp.Web.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("87d2cfb2-978a-443b-8ab3-3db1fe4eea95"),
+                            Id = new Guid("6c559e1e-cf69-465d-98b4-46e2b1c26da0"),
                             CheckinDate = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             CheckoutDate = new DateTime(2024, 12, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GuestId = new Guid("cc8884c8-5fef-422f-a040-bb241d56bae1"),
-                            HotelId = new Guid("f08fee76-9236-4352-bad0-79114d2f4fa8"),
-                            RoomId = new Guid("c9a182e8-3a44-4801-9b00-b12e61483dbc"),
-                            StaffId = new Guid("6d70ff14-bba9-4d51-ac4b-cb8bf9fa211c"),
+                            GuestId = new Guid("fae9ecb7-b323-476b-9e97-0a6caca0cf9c"),
+                            HotelId = new Guid("b2752b87-da7b-4b9c-b4de-ac83558526a6"),
+                            RoomId = new Guid("a323b2bd-a53e-4e90-b686-1d3f09953ba7"),
+                            StaffId = new Guid("7069055e-ea25-4cda-84a4-b4ac6e992ac0"),
                             TotalPrice = 500.00m
                         },
                         new
                         {
-                            Id = new Guid("f44a91ac-41ca-48f3-a2f8-9363b3ddbb19"),
+                            Id = new Guid("f677d23e-2817-4172-bfa4-f65168d6223a"),
                             CheckinDate = new DateTime(2024, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             CheckoutDate = new DateTime(2024, 12, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            GuestId = new Guid("7d834c10-8d45-432a-8497-5fe67d6bc87e"),
-                            HotelId = new Guid("f5a9f365-2487-4da9-930f-5ed74548b19c"),
-                            RoomId = new Guid("2089920b-f804-4902-9378-7b5edbd8de2d"),
-                            StaffId = new Guid("f8778587-24d8-413e-9aeb-03b12560d6f7"),
+                            GuestId = new Guid("4ca39a7b-8351-4348-8ece-f836ebcf0fcc"),
+                            HotelId = new Guid("f2076ab0-6c3f-4107-a486-69493c927ad7"),
+                            RoomId = new Guid("8272e2c2-3f52-47b9-bb8d-0d328a338ef9"),
+                            StaffId = new Guid("4c9e04b1-6996-4190-8e8f-fd198515f19f"),
                             TotalPrice = 300.00m
                         });
                 });
@@ -143,7 +143,7 @@ namespace HotelApp.Web.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("cc8884c8-5fef-422f-a040-bb241d56bae1"),
+                            Id = new Guid("fae9ecb7-b323-476b-9e97-0a6caca0cf9c"),
                             Address = "789 Pine St, Hilltown, Country",
                             DateOfBirth = new DateTime(1982, 11, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "alicejohnson@example.com",
@@ -153,7 +153,7 @@ namespace HotelApp.Web.Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("7d834c10-8d45-432a-8497-5fe67d6bc87e"),
+                            Id = new Guid("4ca39a7b-8351-4348-8ece-f836ebcf0fcc"),
                             Address = "321 Birch Ln, Seaview, Country",
                             DateOfBirth = new DateTime(1995, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "michaelwilliams@example.com",
@@ -222,7 +222,7 @@ namespace HotelApp.Web.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f08fee76-9236-4352-bad0-79114d2f4fa8"),
+                            Id = new Guid("b2752b87-da7b-4b9c-b4de-ac83558526a6"),
                             Address = "123 Main St, Cityville, Country",
                             CheckinTime = new TimeSpan(0, 14, 0, 0, 0),
                             CheckoutTime = new TimeSpan(0, 11, 0, 0, 0),
@@ -235,7 +235,7 @@ namespace HotelApp.Web.Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("f5a9f365-2487-4da9-930f-5ed74548b19c"),
+                            Id = new Guid("f2076ab0-6c3f-4107-a486-69493c927ad7"),
                             Address = "456 Ocean Ave, Seaside, Country",
                             CheckinTime = new TimeSpan(0, 15, 0, 0, 0),
                             CheckoutTime = new TimeSpan(0, 10, 0, 0, 0),
@@ -247,7 +247,7 @@ namespace HotelApp.Web.Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("59e30f3b-29c6-4c66-92d2-55cfb73a8507"),
+                            Id = new Guid("89f99082-15da-4328-98c6-9f6d90c08506"),
                             Address = "456 Beachside Blvd, Seaside Town, Country",
                             CheckinTime = new TimeSpan(0, 15, 0, 0, 0),
                             CheckoutTime = new TimeSpan(0, 12, 0, 0, 0),
@@ -284,26 +284,26 @@ namespace HotelApp.Web.Data.Migrations
                     b.HasData(
                         new
                         {
-                            HotelId = new Guid("f08fee76-9236-4352-bad0-79114d2f4fa8"),
-                            RoomId = new Guid("c9a182e8-3a44-4801-9b00-b12e61483dbc"),
+                            HotelId = new Guid("b2752b87-da7b-4b9c-b4de-ac83558526a6"),
+                            RoomId = new Guid("a323b2bd-a53e-4e90-b686-1d3f09953ba7"),
                             IsDeleted = false
                         },
                         new
                         {
-                            HotelId = new Guid("f08fee76-9236-4352-bad0-79114d2f4fa8"),
-                            RoomId = new Guid("49f761a2-b413-4b54-96d0-b430e77f81a5"),
+                            HotelId = new Guid("b2752b87-da7b-4b9c-b4de-ac83558526a6"),
+                            RoomId = new Guid("4c0ae8b9-1bd0-4571-8341-a2efc4c8c586"),
                             IsDeleted = false
                         },
                         new
                         {
-                            HotelId = new Guid("f5a9f365-2487-4da9-930f-5ed74548b19c"),
-                            RoomId = new Guid("2089920b-f804-4902-9378-7b5edbd8de2d"),
+                            HotelId = new Guid("f2076ab0-6c3f-4107-a486-69493c927ad7"),
+                            RoomId = new Guid("8272e2c2-3f52-47b9-bb8d-0d328a338ef9"),
                             IsDeleted = false
                         },
                         new
                         {
-                            HotelId = new Guid("f5a9f365-2487-4da9-930f-5ed74548b19c"),
-                            RoomId = new Guid("902e52bf-cc0d-44c8-9868-cd315d5b07c9"),
+                            HotelId = new Guid("f2076ab0-6c3f-4107-a486-69493c927ad7"),
+                            RoomId = new Guid("a65a0b07-2385-4f19-9737-716677ead8d2"),
                             IsDeleted = false
                         });
                 });
@@ -342,17 +342,17 @@ namespace HotelApp.Web.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("8d87c9e4-4559-4e96-89a0-5052191d0014"),
+                            Id = new Guid("74c8165a-ad92-4523-b081-3746d1ce23dc"),
                             Amount = 500.00m,
-                            BookingId = new Guid("87d2cfb2-978a-443b-8ab3-3db1fe4eea95"),
+                            BookingId = new Guid("6c559e1e-cf69-465d-98b4-46e2b1c26da0"),
                             PaymentDate = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Credit Card"
                         },
                         new
                         {
-                            Id = new Guid("740bb7e7-083f-4a08-8f6f-d645cfdb99b1"),
+                            Id = new Guid("57008aa4-dd0f-4a11-9c73-4473799b0bee"),
                             Amount = 300.00m,
-                            BookingId = new Guid("f44a91ac-41ca-48f3-a2f8-9363b3ddbb19"),
+                            BookingId = new Guid("f677d23e-2817-4172-bfa4-f65168d6223a"),
                             PaymentDate = new DateTime(2024, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Cash"
                         });
@@ -398,44 +398,44 @@ namespace HotelApp.Web.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("c9a182e8-3a44-4801-9b00-b12e61483dbc"),
+                            Id = new Guid("a323b2bd-a53e-4e90-b686-1d3f09953ba7"),
                             ImageURL = "/images/room1.png",
                             IsDeleted = false,
                             RoomNumber = 101,
-                            RoomTypeId = new Guid("9374aedb-6b96-442e-9dc4-8151cf392ec4"),
+                            RoomTypeId = new Guid("32ae3e42-270e-4c36-95ac-9efe748bd614"),
                             Status = "Available"
                         },
                         new
                         {
-                            Id = new Guid("49f761a2-b413-4b54-96d0-b430e77f81a5"),
+                            Id = new Guid("4c0ae8b9-1bd0-4571-8341-a2efc4c8c586"),
                             ImageURL = "/images/room2.png",
                             IsDeleted = false,
                             RoomNumber = 102,
-                            RoomTypeId = new Guid("9374aedb-6b96-442e-9dc4-8151cf392ec4"),
-                            Status = "Occupied"
-                        },
-                        new
-                        {
-                            Id = new Guid("2089920b-f804-4902-9378-7b5edbd8de2d"),
-                            IsDeleted = false,
-                            RoomNumber = 201,
-                            RoomTypeId = new Guid("7595a22c-4f20-446e-9ff1-2dd858e0605e"),
-                            Status = "Cleaning"
-                        },
-                        new
-                        {
-                            Id = new Guid("902e52bf-cc0d-44c8-9868-cd315d5b07c9"),
-                            IsDeleted = false,
-                            RoomNumber = 202,
-                            RoomTypeId = new Guid("7595a22c-4f20-446e-9ff1-2dd858e0605e"),
+                            RoomTypeId = new Guid("32ae3e42-270e-4c36-95ac-9efe748bd614"),
                             Status = "Available"
                         },
                         new
                         {
-                            Id = new Guid("7de86043-69be-405f-848d-3ea837e045e5"),
+                            Id = new Guid("8272e2c2-3f52-47b9-bb8d-0d328a338ef9"),
+                            IsDeleted = false,
+                            RoomNumber = 201,
+                            RoomTypeId = new Guid("98e23296-f423-42e3-9606-d8286e79bc54"),
+                            Status = "Available"
+                        },
+                        new
+                        {
+                            Id = new Guid("a65a0b07-2385-4f19-9737-716677ead8d2"),
+                            IsDeleted = false,
+                            RoomNumber = 202,
+                            RoomTypeId = new Guid("98e23296-f423-42e3-9606-d8286e79bc54"),
+                            Status = "Available"
+                        },
+                        new
+                        {
+                            Id = new Guid("9fd1e1ee-6fae-4d51-a637-fcf24e1ede82"),
                             IsDeleted = false,
                             RoomNumber = 301,
-                            RoomTypeId = new Guid("7595a22c-4f20-446e-9ff1-2dd858e0605e"),
+                            RoomTypeId = new Guid("98e23296-f423-42e3-9606-d8286e79bc54"),
                             Status = "Available"
                         });
                 });
@@ -473,7 +473,7 @@ namespace HotelApp.Web.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("9374aedb-6b96-442e-9dc4-8151cf392ec4"),
+                            Id = new Guid("32ae3e42-270e-4c36-95ac-9efe748bd614"),
                             Capacity = 1,
                             Description = "A single room for solo travelers.",
                             Name = "Single",
@@ -481,7 +481,7 @@ namespace HotelApp.Web.Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("7595a22c-4f20-446e-9ff1-2dd858e0605e"),
+                            Id = new Guid("98e23296-f423-42e3-9606-d8286e79bc54"),
                             Capacity = 2,
                             Description = "A double room for two guests.",
                             Name = "Double",
@@ -489,7 +489,7 @@ namespace HotelApp.Web.Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("d2fd4ec4-8c74-41bc-bb23-a0fab80001e9"),
+                            Id = new Guid("37f1d7e0-ceb4-4704-8c53-ece9ec44b122"),
                             Capacity = 4,
                             Description = "A suite with multiple rooms and luxurious amenities.",
                             Name = "Suite",
@@ -497,7 +497,7 @@ namespace HotelApp.Web.Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("7dc23acb-fd86-4d55-a6e7-7c9038fc79a2"),
+                            Id = new Guid("aec34658-7edc-4935-aa06-34869660e905"),
                             Capacity = 4,
                             Name = "Suite",
                             PricePerNight = 200.00m
@@ -564,12 +564,12 @@ namespace HotelApp.Web.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("6d70ff14-bba9-4d51-ac4b-cb8bf9fa211c"),
+                            Id = new Guid("7069055e-ea25-4cda-84a4-b4ac6e992ac0"),
                             DateOfBirth = new DateTime(1985, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "john.doe@grandhotel.com",
                             FirstName = "John",
                             HireDate = new DateTime(2015, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            HotelId = new Guid("f08fee76-9236-4352-bad0-79114d2f4fa8"),
+                            HotelId = new Guid("b2752b87-da7b-4b9c-b4de-ac83558526a6"),
                             LastName = "Doe",
                             Phone = "+1234567890",
                             Position = "Manager",
@@ -577,12 +577,12 @@ namespace HotelApp.Web.Data.Migrations
                         },
                         new
                         {
-                            Id = new Guid("f8778587-24d8-413e-9aeb-03b12560d6f7"),
+                            Id = new Guid("4c9e04b1-6996-4190-8e8f-fd198515f19f"),
                             DateOfBirth = new DateTime(1990, 7, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "jane.smith@beachresort.com",
                             FirstName = "Jane",
                             HireDate = new DateTime(2018, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            HotelId = new Guid("f5a9f365-2487-4da9-930f-5ed74548b19c"),
+                            HotelId = new Guid("f2076ab0-6c3f-4107-a486-69493c927ad7"),
                             LastName = "Smith",
                             Phone = "+0987654321",
                             Position = "Receptionist",

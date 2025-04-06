@@ -37,8 +37,8 @@ namespace HotelApp.Common
         public static class Booking
         {
             //Booking
-            public const decimal BookingTotalPriceMinLength = 0;
-            public const decimal BookingTotalPriceMaxLength = decimal.MaxValue;
+            public const string BookingTotalPriceMinLength = "100";
+            public const string BookingTotalPriceMaxLength = "2000";
             public const string CheckInOutDateFormat = "yyyy-MM-dd";
         }
 

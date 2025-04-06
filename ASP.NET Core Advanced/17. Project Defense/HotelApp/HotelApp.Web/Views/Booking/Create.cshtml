@@ -1,0 +1,114 @@
+﻿@using HotelApp.Web.ViewModels.Booking
+@model AddBookingFormModel
+
+@{
+    ViewData["Title"] = "Create Booking";
+}
+
+<h1>Create Booking</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="CheckinDate" class="control-label"></label>
+        <input asp-for="CheckinDate" class="form-control" type="date" id="CheckinDate" />
+        <span asp-validation-for="CheckinDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CheckoutDate" class="control-label"></label>
+        <input asp-for="CheckoutDate" class="form-control" type="date" id="CheckoutDate" />
+        <span asp-validation-for="CheckoutDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="GuestId" class="control-label"></label>
+        <select asp-for="GuestId" class="form-control" asp-items="Model.Guests"></select>
+        <span asp-validation-for="GuestId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="HotelId" class="control-label"></label>
+        <select asp-for="HotelId" class="form-control" asp-items="Model.Hotels" id="hotelDropdown"></select>
+        <span asp-validation-for="HotelId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RoomId" class="control-label"></label>
+        <select asp-for="RoomId" class="form-control" asp-items="Model.AvailableRooms" id="roomDropdown">
+            <option value="">Select a room</option>
+        </select>
+        <span asp-validation-for="RoomId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TotalPrice" class="control-label"></label>
+        <input asp-for="TotalPrice" class="form-control" readonly id="totalPrice" />
+        <span asp-validation-for="TotalPrice" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+@section Scripts {
+
+        <script>
+            // Function to calculate and update the total price
+        function calculateTotalPrice() {
+            const checkinDate = document.getElementById("CheckinDate").value;
+            const checkoutDate = document.getElementById("CheckoutDate").value;
+            const roomDropdown = document.getElementById("roomDropdown");
+            const selectedRoom = roomDropdown.selectedOptions[0];
+
+            if (checkinDate && checkoutDate && selectedRoom) {
+                const checkin = new Date(checkinDate);
+                const checkout = new Date(checkoutDate);
+                const stayDuration = (checkout - checkin) / (1000 * 3600 * 24); // Days
+
+                if (stayDuration > 0) {
+                    const pricePerNight = parseFloat(selectedRoom.getAttribute('data-price'));
+                    const totalPrice = stayDuration * pricePerNight;
+                    document.getElementById("totalPrice").value = totalPrice.toFixed(2);
+                } else {
+                    document.getElementById("totalPrice").value = ""; // Reset if invalid dates
+                }
+            }
+        }
+
+        // Fetch available rooms dynamically based on selected hotel
+        document.getElementById('hotelDropdown').addEventListener('change', function () {
+            const hotelId = this.value;
+            const roomDropdown = document.getElementById('roomDropdown');
+
+            if (!hotelId) {
+                roomDropdown.innerHTML = '<option value="">Select a hotel first</option>';
+                return;
+            }
+
+            fetch(`/api/RoomApi/GetAvailableRooms?id=${hotelId}`)
+                .then(response => response.json())
+                .then(data => {
+                    roomDropdown.innerHTML = '';
+                    if (data.success) {
+                        data.rooms.forEach(room => {
+                            const [roomId, pricePerNight] = room.value.split('|'); // Split the Value into parts
+                            const option = document.createElement('option');
+                            option.value = roomId;
+                            option.textContent = room.text;
+                            option.setAttribute('data-price', pricePerNight); // Store price as a custom attribute
+                            roomDropdown.appendChild(option);
+                        });
+                    } else {
+                        roomDropdown.innerHTML = '<option value="">No rooms available</option>';
+                    }
+                })
+                .catch(() => {
+                    alert("Error loading rooms. Please try again.");
+                });
+        });
+
+        // Add event listeners for dynamic price calculation
+        document.getElementById('CheckinDate').addEventListener('change', calculateTotalPrice);
+        document.getElementById('CheckoutDate').addEventListener('change', calculateTotalPrice);
+        document.getElementById('roomDropdown').addEventListener('change', calculateTotalPrice);
+    </script>
+}

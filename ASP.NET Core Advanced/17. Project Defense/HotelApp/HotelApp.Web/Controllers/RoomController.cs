@@ -9,6 +9,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HotelApp.Web.Controllers
 {
+
+
     public class RoomController : BaseController
     {
         private readonly HotelDbContext dbContext;

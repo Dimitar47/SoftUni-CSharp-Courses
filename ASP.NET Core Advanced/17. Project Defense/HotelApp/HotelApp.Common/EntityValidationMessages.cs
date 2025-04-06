@@ -25,5 +25,16 @@
         {
             public const string RoomTypeNameAllowedTypesMessage = "Room type must be Single, Double, or Suite.";
         }
+
+        public static class Booking
+        {
+            public const string CheckinDateRequiredMessage = @"Check-in date is required in format yyyy-MM-dd.";
+            public const string CheckoutDateRequiredMessage = @"Check-out date is required in format yyyy-MM-dd.";
+            public const string TotalPriceRequiredMessage = "Total Price is required.";
+            public const string GuestRequiredMessage = "Guest is required.";
+            public const string HotelRequiredMessage = "Hotel is required.";
+            public const string RoomRequiredMessage = "Room is required.";
+          
+        }
     }
 }
