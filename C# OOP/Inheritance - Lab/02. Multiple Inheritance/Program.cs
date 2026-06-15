@@ -4,9 +4,11 @@
     {
         public static void Main(string[] args)
         {
-            Dog dog = new Dog();
-            dog.Bark();
-            dog.Bark();
+            Puppy puppy = new Puppy();
+            puppy.Eat();
+            puppy.Bark();
+            puppy.Weep();
+
         }
     }
 
@@ -23,6 +25,13 @@
         public void Bark()
         {
             Console.WriteLine("barking...");
+        }
+    }
+    public class Puppy : Dog
+    {
+        public void Weep()
+        {
+            Console.WriteLine("weeping...");
         }
     }
 }
