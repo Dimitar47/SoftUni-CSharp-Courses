@@ -1,4 +1,7 @@
 <Solution>
   <Project Path="01. Single Inheritance/01. Single Inheritance.csproj" />
   <Project Path="02. Multiple Inheritance/02. Multiple Inheritance.csproj" />
+  <Project Path="03. Hierarchical Inheritance/03. Hierarchical Inheritance.csproj" />
+  <Project Path="04. Random List/04. Random List.csproj" />
+  <Project Path="05. Stack of Strings/05. Stack of Strings.csproj" />
 </Solution>
