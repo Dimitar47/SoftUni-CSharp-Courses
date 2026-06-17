@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="01. Persons/01. Persons.csproj" />
+  <Project Path="02. Salary/02. Salary.csproj" Id="2028e9ca-1746-4718-8d17-0a1f91f36cc3" />
+  <Project Path="03. Validation/03. Validation.csproj" Id="ca146cd0-051b-4fdd-aa0f-961649d4b3b8" />
+  <Project Path="04. Team/04. Team.csproj" Id="3a6b32bb-3df5-4587-a8ed-529fe96cd256" />
+</Solution>
