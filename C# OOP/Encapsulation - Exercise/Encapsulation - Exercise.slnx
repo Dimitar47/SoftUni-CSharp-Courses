@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="01.ClassBoxData/01.ClassBoxData.csproj" />
+  <Project Path="02.AnimalFarm/02.AnimalFarm.csproj" />
+  <Project Path="03.ShoppingSpree/03.ShoppingSpree.csproj" />
+  <Project Path="04.PizzaCalories/04.PizzaCalories.csproj" />
+  <Project Path="05.FootballTeam/05.FootballTeam.csproj" />
+</Solution>
