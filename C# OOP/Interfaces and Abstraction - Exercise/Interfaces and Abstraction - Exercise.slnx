@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="01.IPerson/01.IPerson.csproj" />
+  <Project Path="02.Implementation/02.Implementation.csproj" />
+  <Project Path="03.Telephony/03.Telephony.csproj" />
+  <Project Path="04.BorderControl/04.BorderControl.csproj" />
+  <Project Path="05.BirthdayCelebrations/05.BirthdayCelebrations.csproj" />
+  <Project Path="06.FoodShortage/06.FoodShortage.csproj" />
+  <Project Path="07.MilitaryElite/07.MilitaryElite.csproj" />
+  <Project Path="08.CollectionHierarchy/08.CollectionHierarchy.csproj" />
+  <Project Path="09.ExplicitInterfaces/09.ExplicitInterfaces.csproj" Id="de5fa7e2-2e9b-4ced-aabc-57cdba4a4adf" />
+</Solution>
