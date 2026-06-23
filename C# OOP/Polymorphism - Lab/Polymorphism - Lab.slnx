@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="01.MathOperations/01.MathOperations.csproj" />
+  <Project Path="02.Animals/02.Animals.csproj" Id="c2da40a1-95fa-4152-9ebd-7bd8ba5e06f4" />
+  <Project Path="03.Shapes/03.Shapes.csproj" Id="2fb1bf60-b166-4fbb-b1b8-df0465c4ffca" />
+</Solution>
