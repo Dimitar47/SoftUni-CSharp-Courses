@@ -1,4 +1,6 @@
 <Solution>
   <Project Path="01.Vehicles/01.Vehicles.csproj" />
   <Project Path="02.VehiclesExtension/02.VehiclesExtension.csproj" Id="7c78c4c7-5c90-4024-83f2-a4d53e6c87f7" />
+  <Project Path="03.Raiding/03.Raiding.csproj" Id="ec07595c-376e-44a7-b644-fc9389cef9dc" />
+  <Project Path="04.WildFarm/04.WildFarm.csproj" Id="78831edc-1835-4dfa-8c32-2540f613c083" />
 </Solution>
