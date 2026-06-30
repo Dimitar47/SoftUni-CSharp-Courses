@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="01.SquareRoot/01.SquareRoot.csproj" />
+  <Project Path="02.EnterNumbers/02.EnterNumbers.csproj" />
+  <Project Path="03.Cards/03.Cards.csproj" />
+  <Project Path="04.SumIntegers/04.SumIntegers.csproj" />
+  <Project Path="05.PlayCatch/05.PlayCatch.csproj" />
+  <Project Path="06.MoneyTransactions/06.MoneyTransactions.csproj" />
+</Solution>
